@@ -9,7 +9,7 @@ st.title("Simple Web Scraper and Data Editor")
 # URL input
 
 if st.button("Scrape"):
-    print("Scraping data from:", CP.GetUrl())
+    st.write("Scraping data from:", CP.GetUrl())
     try:
         CP.RetrieveData()
         st.success("Data scraped successfully!")
@@ -18,14 +18,14 @@ if st.button("Scrape"):
     
     club:Club = CP.GetClub()
     for team in club.GetTeams():
-        print(f"Team: {team.name}")
-        print(f"  Heren:")
+        st.write(f"Team: {team.name}")
+        st.write(f"  Heren:")
         for player in team.players:
             if player.gender == Gender.MALE:
-                print(player.name)
-        print(f"  Dames:")
+                st.write(player.name)
+        st.write(f"  Dames:")
         for player in team.players:
             if player.gender == Gender.FEMALE:
-                print(player.name)
+                st.write(player.name)
 
     
