@@ -4,7 +4,12 @@ import CompetitiePlanner as CP
 from src.Club import Club
 from src.Gender import Gender
 
-st.title("Simple Web Scraper and Data Editor")
+st.title("Competitie Planner BC Geldrop")
+
+mainPage = st.Page("pages/mainPage.py", title="Uitleg")
+teamPage = st.Page("pages/teamPage.py", title="Teams")
+
+st.navigation([mainPage, teamPage])
 
 # URL input
 
@@ -12,7 +17,6 @@ if st.button("Scrape"):
     st.write("Scraping data from:", CP.GetUrl())
     try:
         CP.RetrieveData()
-        st.success("Data scraped successfully!")
     except Exception as e:
         st.error(f"An unexpected error occurred: {e}")
     
