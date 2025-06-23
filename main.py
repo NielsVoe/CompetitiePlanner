@@ -7,10 +7,9 @@ from src.Gender import Gender
 st.title("Simple Web Scraper and Data Editor")
 
 # URL input
-url = st.text_input("Enter a URL to scrape", "https://example.com")
 
 if st.button("Scrape"):
-    st.write("Scraping data from:", url)
+    st.write("Scraping data from:", CP.GetUrl())
     try:
         CP.RetrieveData()
         st.success("Data scraped successfully!")

@@ -5,9 +5,13 @@ from src.Player import Player
 from src.Gender import Gender
 
 club:Club = None
+url = "https://badmintonnederland.toernooi.nl/sport/clubs.aspx?id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7"
+
+def GetUrl() -> str:
+    return url
 
 def RetrieveData():
-    competitie = ToernooiHandler("https://badmintonnederland.toernooi.nl/sport/clubs.aspx?id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7")
+    competitie = ToernooiHandler(url)
     clubID = competitie.GetClubID("GELDROP BC").split("?", 1)[-1]
     club = Club("GELDROP BC", clubID, 10)
     teams = competitie.GetTeams(clubID)
