@@ -18,7 +18,7 @@ if st.button("Scrape"):
         st.error(f"An unexpected error occurred: {e}")
     
     club:Club = CP.GetClub()
-    for team in club.teams:
+    for team in club.GetTeams():
         st.write(f"Team: {team.name}")
         st.write(f"  Heren:")
         for player in team.players:
