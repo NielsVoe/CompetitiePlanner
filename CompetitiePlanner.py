@@ -46,3 +46,4 @@ def PrintData():
 
 if __name__ == "__main__":
     RetrieveData()
+    PrintData()
