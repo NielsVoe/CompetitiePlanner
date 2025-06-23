@@ -32,5 +32,17 @@ def RetrieveData():
 def GetClub():
     return club
 
+def PrintData():
+    for team in club.GetTeams():
+        print(f"Team: {team.name}")
+        print(f"  Heren:")
+        for player in team.players:
+            if player.gender == Gender.MALE:
+                print(player.name)
+        print(f"  Dames:")
+        for player in team.players:
+            if player.gender == Gender.FEMALE:
+                print(player.name)
+
 if __name__ == "__main__":
     RetrieveData()
