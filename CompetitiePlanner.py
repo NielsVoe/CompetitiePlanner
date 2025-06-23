@@ -33,6 +33,5 @@ def main():
             if player.gender == Gender.FEMALE:
                 print(player.name)
 
-
 if __name__ == "__main__":
     main()
