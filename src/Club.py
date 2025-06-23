@@ -1,11 +1,14 @@
 from src.Team import Team
 
 class Club:
-    def __init__(self, name:str, id:str, courtsAvailable:int):
+    def __init__(self, name:str, courtsAvailable:int, id:str=""):
         self.name = name
         self.id = id
         self.courtsAvailable = courtsAvailable
         self.teams:list[Team] = []
+    
+    def SetClubID(self, id:str):
+        self.id = id
 
     def GetTeams(self) -> list[Team]:
         return self.teams

@@ -4,7 +4,7 @@ from src.Team import Team
 from src.Player import Player
 from src.Gender import Gender
 
-club:Club = None
+club = Club("GELDROP BC", 10)
 url = "https://badmintonnederland.toernooi.nl/sport/clubs.aspx?id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7"
 
 def GetUrl() -> str:
@@ -13,7 +13,7 @@ def GetUrl() -> str:
 def RetrieveData():
     competitie = ToernooiHandler(url)
     clubID = competitie.GetClubID("GELDROP BC").split("?", 1)[-1]
-    club = Club("GELDROP BC", clubID, 10)
+    club.SetClubID(clubID)
     teams = competitie.GetTeams(clubID)
     for t in teams:
         teamID = t["ID"]
@@ -33,7 +33,9 @@ def GetClub():
     return club
 
 def PrintData():
-    for team in club.GetTeams():
+    team:Team
+    teams = club.GetTeams()
+    for team in teams:
         print(f"Team: {team.name}")
         print(f"  Heren:")
         for player in team.players:
