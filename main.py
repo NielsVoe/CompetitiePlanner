@@ -11,7 +11,12 @@ url = st.text_input("Enter a URL to scrape", "https://example.com")
 
 if st.button("Scrape"):
     st.write("Scraping data from:", url)
-    CP.main()
+    try:
+        CP.RetrieveData()
+        st.success("Data scraped successfully!")
+    except Exception as e:
+        st.error(f"An unexpected error occurred: {e}")
+    
     club:Club = CP.GetClub()
     for team in club.teams:
         st.write(f"Team: {team.name}")
