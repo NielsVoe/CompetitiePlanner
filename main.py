@@ -9,7 +9,9 @@ st.title("Competitie Planner BC Geldrop")
 mainPage = st.Page("pages/mainPage.py", title="Uitleg")
 teamPage = st.Page("pages/teamPage.py", title="Teams")
 
-st.navigation([mainPage, teamPage])
+pg = st.navigation([mainPage, teamPage])
+
+pg.run()
 
 # URL input
 
