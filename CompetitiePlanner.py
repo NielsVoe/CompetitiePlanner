@@ -4,6 +4,8 @@ from src.Team import Team
 from src.Player import Player
 from src.Gender import Gender
 
+club:Club = None
+
 def main():
     competitie = ToernooiHandler("https://badmintonnederland.toernooi.nl/sport/clubs.aspx?id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7")
     clubID = competitie.GetClubID("GELDROP BC").split("?", 1)[-1]
@@ -19,7 +21,8 @@ def main():
             playerName = p["Name"]
             gender = Gender.MALE if p["Gender"] == "Male" else Gender.FEMALE
             player = Player(playerName, playerID, gender)
-            team.AddPlayer(player)
+            if vastSpeler:
+                team.AddPlayer(player)
         club.AddTeam(team)
     
     for team in club.teams:
@@ -32,6 +35,9 @@ def main():
         for player in team.players:
             if player.gender == Gender.FEMALE:
                 print(player.name)
+
+def GetClub():
+    return club
 
 if __name__ == "__main__":
     main()
