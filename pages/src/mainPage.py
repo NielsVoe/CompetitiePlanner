@@ -46,15 +46,3 @@ if st.button("Ververs data"):
     })
 
     table.table(df)
-    
-    # club:Club = CP.GetClub()
-    # for team in club.GetTeams():
-    #     st.write(f"Team: {team.name}")
-    #     st.write(f"  Heren:")
-    #     for player in team.players:
-    #         if player.gender == Gender.MALE:
-    #             st.write(player.name)
-    #     st.write(f"  Dames:")
-    #     for player in team.players:
-    #         if player.gender == Gender.FEMALE:
-    #             st.write(player.name)
