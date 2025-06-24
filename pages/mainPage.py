@@ -11,6 +11,12 @@ Welkom bij de Competitie Planner voor BC Geldrop!
 """)
 table = st.empty()
 
+def GetNumberOfTeams() -> int:
+    teams = CP.GetClub().GetTeams()
+    if not teams:
+        return 0
+    return len(teams)
+
 if st.button("Ververs data"):
     table.empty()
     try:
