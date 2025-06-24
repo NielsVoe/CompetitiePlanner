@@ -11,6 +11,7 @@ Welkom bij de Competitie Planner voor BC Geldrop!
 """)
 
 if st.button("Ververs data"):
+    table = st.empty()
     try:
         CP.RetrieveData()
     except Exception as e:
@@ -21,7 +22,7 @@ if st.button("Ververs data"):
         "Aantal spelers": [len(team.players) for team in CP.GetClub().GetTeams()]
     })
 
-    st.table(df)
+    table = st.table(df)
     
     # club:Club = CP.GetClub()
     # for team in club.GetTeams():
