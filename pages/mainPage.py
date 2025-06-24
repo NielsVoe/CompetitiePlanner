@@ -9,9 +9,10 @@ st.title("Uitleg Competitie Planner")
 st.write("""
 Welkom bij de Competitie Planner voor BC Geldrop!
 """)
+table = st.empty()
 
 if st.button("Ververs data"):
-    table = st.empty()
+    table.empty()
     try:
         CP.RetrieveData()
     except Exception as e:
@@ -22,7 +23,7 @@ if st.button("Ververs data"):
         "Aantal spelers": [len(team.players) for team in CP.GetClub().GetTeams()]
     })
 
-    table = st.table(df)
+    table.table(df)
     
     # club:Club = CP.GetClub()
     # for team in club.GetTeams():
