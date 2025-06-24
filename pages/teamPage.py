@@ -1,13 +1,15 @@
 import streamlit as st
+from src.Club import Club
+from src.Team import Team
 
 class TeamPage:
-    def __init__(self, club, teamName=""):
+    def __init__(self, club: Club, teamName: str = ""):
         self.club = club
         self.teamName = teamName
 
     def DisplayTeam(self):
         teams = self.club.GetTeams()
-        team = None
+        team:Team = None
         for t in teams:
             if t.name == self.teamName:
                 team = t
