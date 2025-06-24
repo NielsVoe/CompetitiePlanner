@@ -1,5 +1,5 @@
 import streamlit as st
-from teamPage import TeamPage
+from pages.src.teamPage import TeamPage
 import mainPage as MainPage
 
 st.title("BC Geldrop 1")
