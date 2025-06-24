@@ -10,6 +10,6 @@ homePage = st.Page("pages/mainPage.py", title="Uitleg")
 # Create a list of team names
 team1 = st.Page("pages/BCGeldrop1.py", title="BC Geldrop 1")
 
-pg = st.navigation([homePage, team1],)
+pg = st.navigation([homePage, team1])
 
 pg.run()
