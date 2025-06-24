@@ -21,6 +21,9 @@ def GetNumberOfTeams() -> int:
         return 0
     return len(teams)
 
+def GetClub() -> Club:
+    return CP.GetClub()
+
 if st.button("Ververs data"):
     table.empty()
     try:
