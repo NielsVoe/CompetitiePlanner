@@ -1,20 +1,15 @@
 # save as app.py
 import streamlit as st
-from pages.teamPage import TeamPage
+from pages.BCGeldrop1 import TeamPage
 import pages.mainPage as mainPage
 
 st.title("Competitie Planner BC Geldrop")
 
 homePage = st.Page("pages/mainPage.py", title="Uitleg")
-numberOfTeams = mainPage.GetNumberOfTeams()
 
-teamPages = []
+# Create a list of team names
+team1 = st.Page("pages/BCGeldrop1.py", title="BC Geldrop 1")
 
-for i in range(1, numberOfTeams + 1):
-    team = TeamPage(mainPage.GetClub(), teamName=f"Geldrop {i}")
-    page = st.Page(team.DisplayTeam(), title=f"Team {i}")
-    teamPages.append(page)
-
-pg = st.navigation([homePage] + teamPages)
+pg = st.navigation([homePage, team1],)
 
 pg.run()
