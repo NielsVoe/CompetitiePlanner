@@ -1,6 +1,6 @@
 import streamlit as st
 from pages.src.teamPage import TeamPage
-import mainPage as MainPage
+import pages.src.mainPage as MainPage
 
 st.title("BC Geldrop 1")
 st.write("Deze pagina toont de spelers van BC Geldrop 1.")
