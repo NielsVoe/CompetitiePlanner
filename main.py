@@ -12,7 +12,8 @@ teamPages = []
 
 for i in range(1, numberOfTeams + 1):
     team = TeamPage(mainPage.GetClub(), teamName=f"Geldrop {i}")
-    teamPages.append((team.DisplayTeam(), f"Team {i}"))
+    page = st.Page(team.DisplayTeam(), title=f"Team {i}")
+    teamPages.append(team)
 
 pg = st.navigation(teamPages)
 
