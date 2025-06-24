@@ -14,6 +14,10 @@ table = st.empty()
 def GetNumberOfTeams() -> int:
     teams = CP.GetClub().GetTeams()
     if not teams:
+        CP.RetrieveData()
+        teams = CP.GetClub().GetTeams()
+    if not teams:  # If still no teams after retrieval, we assume there are none
+        st.warning("Er zijn momenteel geen teams beschikbaar. Probeer later opnieuw.")
         return 0
     return len(teams)
 
