@@ -11,7 +11,8 @@ numberOfTeams = mainPage.GetNumberOfTeams()
 teamPages = []
 
 for i in range(1, numberOfTeams + 1):
-    teamPages.append(st.Page("pages/teamPage.py", title=f"Team {i}"))
+    team = TeamPage(mainPage.GetClub(), teamName=f"Team {i}")
+    teamPages.append((team.DisplayTeam(), f"Team {i}"))
 
 pg = st.navigation(teamPages)
 
