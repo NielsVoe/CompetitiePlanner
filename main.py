@@ -13,8 +13,8 @@ teamPages = []
 for i in range(1, numberOfTeams + 1):
     team = TeamPage(mainPage.GetClub(), teamName=f"Geldrop {i}")
     page = st.Page(team.DisplayTeam(), title=f"Team {i}")
-    teamPages.append(team)
+    teamPages.append(page)
 
-pg = st.navigation(teamPages)
+pg = st.navigation([homePage] + teamPages)
 
 pg.run()
