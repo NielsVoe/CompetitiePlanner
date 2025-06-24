@@ -6,6 +6,9 @@ class Club:
         self.id = id
         self.courtsAvailable = courtsAvailable
         self.teams:list[Team] = []
+
+    def Reset(self):
+        self.teams.clear()
     
     def SetClubID(self, id:str):
         self.id = id

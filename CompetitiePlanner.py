@@ -15,6 +15,7 @@ def RetrieveData():
     clubID = competitie.GetClubID("GELDROP BC").split("?", 1)[-1]
     club.SetClubID(clubID)
     teams = competitie.GetTeams(clubID)
+    club.Reset()
     for t in teams:
         teamID = t["ID"]
         team = Team(t["Team"], teamID)
