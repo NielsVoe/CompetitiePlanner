@@ -32,8 +32,9 @@ if CP.GetClub().GetTeams():
     })
     table.table(df)
 
+refreshData = st.button("Ververs data")
 
-if st.button("Ververs data"):
+if refreshData:
     table.empty()
     try:
         CP.RetrieveData()
