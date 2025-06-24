@@ -24,6 +24,15 @@ def GetNumberOfTeams() -> int:
 def GetClub() -> Club:
     return CP.GetClub()
 
+# Check if the club has teams
+if CP.GetClub().GetTeams():
+    df = pd.DataFrame({
+        "Team": [team.name for team in CP.GetClub().GetTeams()],
+        "Aantal spelers": [len(team.players) for team in CP.GetClub().GetTeams()]
+    })
+    table.table(df)
+
+
 if st.button("Ververs data"):
     table.empty()
     try:
