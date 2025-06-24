@@ -7,7 +7,11 @@ class TeamPage:
 
     def DisplayTeam(self):
         teams = self.club.GetTeams()
-        team = next((t for t in teams if t.name == self.teamName), None)
+        team = None
+        for t in teams:
+            if t.name == self.teamName:
+                team = t
+                break
         if team:
             st.subheader(team.name)
             st.write("Players:")
