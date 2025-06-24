@@ -1,7 +1,6 @@
 # save as app.py
 import streamlit as st
 from pages.BCGeldrop1 import TeamPage
-import pages.mainPage as mainPage
 
 st.title("Competitie Planner BC Geldrop")
 
