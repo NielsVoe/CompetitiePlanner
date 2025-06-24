@@ -8,10 +8,11 @@ st.title("Competitie Planner BC Geldrop")
 homePage = st.Page("pages/mainPage.py", title="Uitleg")
 numberOfTeams = mainPage.GetNumberOfTeams()
 
-for i in range(1, numberOfTeams + 1):
-    teamPage = TeamPage(mainPage.GetClub(), f"Team {i}")
-    st.sidebar.button(f"Team {i}", on_click=teamPage.DisplayTeam)
+teamPages = []
 
-pg = st.navigation([homePage] + [teamPage for i in range(1, numberOfTeams + 1)])
+for i in range(1, numberOfTeams + 1):
+    teamPages.append(st.Page("pages/teamPage.py", title=f"Team {i}"))
+
+pg = st.navigation([homePage], teamPages)
 
 pg.run()
