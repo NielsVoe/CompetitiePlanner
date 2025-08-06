@@ -6,7 +6,7 @@ from src.Gender import Gender
 from src.Teammatch import Teammatch
 
 club = Club("GELDROP BC", 9)
-url = "https://badmintonnederland.toernooi.nl/sport/clubs.aspx?id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7"
+url = "https://badmintonnederland.toernooi.nl/sport/clubs.aspx?id=39A69CCC-55A7-47C2-A19C-E41728508953"
 
 def GetUrl() -> str:
     return url

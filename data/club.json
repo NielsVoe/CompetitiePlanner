@@ -1,1513 +1,776 @@
 {
     "name": "GELDROP BC",
-    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&club=86",
+    "id": "id=39A69CCC-55A7-47C2-A19C-E41728508953&club=81",
     "courtsAvailable": 9,
     "teams": [
         {
             "name": "GELDROP BC 1",
-            "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&team=372",
-            "players": [
-                {
-                    "name": "Jochem de Greef",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3650",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Bas van Hoof",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3654",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Gijs Schreppers",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3655",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Twan van de Weijer",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3649",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Annelies Blok",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3659",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Yvette Daans",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3652",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Linde James",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3651",
-                    "gender": "Female"
-                }
-            ],
+            "id": "id=39A69CCC-55A7-47C2-A19C-E41728508953&team=375",
+            "players": [],
             "matches": [
                 {
-                    "team1": "ALOUETTE BC 1",
+                    "team1": "BEVER BC 1",
                     "team2": "GELDROP BC 1",
-                    "score1": "6-2",
-                    "score2": "6-2"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 1",
-                    "team2": "ECHT BC 1",
-                    "score1": "6-2",
-                    "score2": "6-2"
+                    "team2": "ROOSTERSE BC 4",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "BBC 77 2",
+                    "team1": "GILZE BC 1",
                     "team2": "GELDROP BC 1",
-                    "score1": "4-4",
-                    "score2": "4-4"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "RUDRA UNITED 1",
+                    "team1": "ALOUETTE BC 2",
                     "team2": "GELDROP BC 1",
-                    "score1": "5-3",
-                    "score2": "5-3"
-                },
-                {
-                    "team1": "GELDROP BC 1",
-                    "team2": "Elektro Tim TRILAN BC 2",
-                    "score1": "6-2",
-                    "score2": "6-2"
-                },
-                {
-                    "team1": "GELDROP BC 1",
-                    "team2": "SMC Maaspoort BCH 2",
-                    "score1": "3-5",
-                    "score2": "3-5"
-                },
-                {
-                    "team1": "Paul Knip Keukens Roosterse BC 4",
-                    "team2": "GELDROP BC 1",
-                    "score1": "3-5",
-                    "score2": "3-5"
-                },
-                {
-                    "team1": "GELDROP BC 1",
-                    "team2": "ALOUETTE BC 1",
-                    "score1": "6-2",
-                    "score2": "6-2"
-                },
-                {
-                    "team1": "ECHT BC 1",
-                    "team2": "GELDROP BC 1",
-                    "score1": "3-5",
-                    "score2": "3-5"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 1",
                     "team2": "BBC 77 2",
-                    "score1": "6-2",
-                    "score2": "6-2"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 1",
-                    "team2": "RUDRA UNITED 1",
-                    "score1": "2-6",
-                    "score2": "2-6"
+                    "team2": "TRILAN BC 1",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "SMC Maaspoort BCH 2",
+                    "team1": "BCH 3",
                     "team2": "GELDROP BC 1",
-                    "score1": "6-2",
-                    "score2": "6-2"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 1",
-                    "team2": "Paul Knip Keukens Roosterse BC 4",
-                    "score1": "5-3",
-                    "score2": "5-3"
+                    "team2": "BEVER BC 1",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "Elektro Tim TRILAN BC 2",
+                    "team1": "ROOSTERSE BC 4",
                     "team2": "GELDROP BC 1",
-                    "score1": "2-6",
-                    "score2": "2-6"
-                }
-            ]
-        },
-        {
-            "name": "GELDROP BC 10",
-            "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&team=381",
-            "players": [
-                {
-                    "name": "Ian Duijf",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3695",
-                    "gender": "Male"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "name": "Daniel Mulkens",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3697",
-                    "gender": "Male"
+                    "team1": "GELDROP BC 1",
+                    "team2": "GILZE BC 1",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "name": "Levi Neijts",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3696",
-                    "gender": "Male"
+                    "team1": "GELDROP BC 1",
+                    "team2": "ALOUETTE BC 2",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "name": "Iris Hoefnagels",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=7301",
-                    "gender": "Female"
+                    "team1": "TRILAN BC 1",
+                    "team2": "GELDROP BC 1",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "name": "Maura Kunst",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3699",
-                    "gender": "Female"
+                    "team1": "GELDROP BC 1",
+                    "team2": "BCH 3",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "name": "Sara Sogaro",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3698",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Loes Tönnissen",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=7425",
-                    "gender": "Female"
-                }
-            ],
-            "matches": [
-                {
-                    "team1": "ELST BC 1",
-                    "team2": "GELDROP BC 10",
-                    "score1": "7-1",
-                    "score2": "7-1"
-                },
-                {
-                    "team1": "MARIKEN BC 8",
-                    "team2": "GELDROP BC 10",
-                    "score1": "8-0",
-                    "score2": "8-0"
-                },
-                {
-                    "team1": "GELDROP BC 10",
-                    "team2": "RUDRA UNITED 5",
-                    "score1": "2-6",
-                    "score2": "2-6"
-                },
-                {
-                    "team1": "VEGHEL 67 BC 7",
-                    "team2": "GELDROP BC 10",
-                    "score1": "5-3",
-                    "score2": "5-3"
-                },
-                {
-                    "team1": "GELDROP BC 10",
-                    "team2": "ALOUETTE BC 5",
-                    "score1": "2-6",
-                    "score2": "2-6"
-                },
-                {
-                    "team1": "ESBV PANACHE 1",
-                    "team2": "GELDROP BC 10",
-                    "score1": "5-3",
-                    "score2": "5-3"
-                },
-                {
-                    "team1": "GELDROP BC 10",
-                    "team2": "MARIKEN BC 8",
-                    "score1": "2-6",
-                    "score2": "2-6"
-                },
-                {
-                    "team1": "RUDRA UNITED 5",
-                    "team2": "GELDROP BC 10",
-                    "score1": "7-1",
-                    "score2": "7-1"
-                },
-                {
-                    "team1": "GELDROP BC 10",
-                    "team2": "ELST BC 1",
-                    "score1": "1-7",
-                    "score2": "1-7"
-                },
-                {
-                    "team1": "GELDROP BC 10",
-                    "team2": "VEGHEL 67 BC 7",
-                    "score1": "4-4",
-                    "score2": "4-4"
-                },
-                {
-                    "team1": "ALOUETTE BC 5",
-                    "team2": "GELDROP BC 10",
-                    "score1": "7-1",
-                    "score2": "7-1"
-                },
-                {
-                    "team1": "GELDROP BC 10",
-                    "team2": "ESBV PANACHE 1",
-                    "score1": "3-5",
-                    "score2": "3-5"
+                    "team1": "BBC 77 2",
+                    "team2": "GELDROP BC 1",
+                    "score1": "",
+                    "score2": ""
                 }
             ]
         },
         {
             "name": "GELDROP BC 2",
-            "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&team=373",
-            "players": [
-                {
-                    "name": "Bas van Hoof",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3654",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Tim van Lieshout",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=6862",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Gijs Schreppers",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3655",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Niels Voermans",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3653",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Annelies Blok",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3659",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Marjolein Blok",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3657",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Dagmar Rijpert",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3658",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Vivianne Timmers",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3656",
-                    "gender": "Female"
-                }
-            ],
+            "id": "id=39A69CCC-55A7-47C2-A19C-E41728508953&team=376",
+            "players": [],
             "matches": [
                 {
                     "team1": "GELDROP BC 2",
-                    "team2": "Skylounge TRILAN BC 3",
-                    "score1": "7-1",
-                    "score2": "7-1"
+                    "team2": "THIELA BC 2",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 2",
-                    "team2": "BBC 77 3",
-                    "score1": "8-0",
-                    "score2": "8-0"
+                    "team2": "ULFTSE BC 1",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "WEERT 67 BC 1",
+                    "team1": "BAN 1",
                     "team2": "GELDROP BC 2",
-                    "score1": "0-8",
-                    "score2": "0-8"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 2",
-                    "team2": "ECHT BC 2",
-                    "score1": "8-0",
-                    "score2": "8-0"
+                    "team2": "AMERSFOORT 4",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "SCC BC 1",
+                    "team1": "MARIKEN BC 2",
                     "team2": "GELDROP BC 2",
-                    "score1": "3-5",
-                    "score2": "3-5"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "KEEP FIT BC 1",
+                    "team1": "ALOUETTE BC 1",
                     "team2": "GELDROP BC 2",
-                    "score1": "1-7",
-                    "score2": "1-7"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 2",
-                    "team2": "OLYMPIA 56 BC 2",
-                    "score1": "7-1",
-                    "score2": "7-1"
+                    "team2": "NETWERK 1",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "Skylounge TRILAN BC 3",
+                    "team1": "THIELA BC 2",
                     "team2": "GELDROP BC 2",
-                    "score1": "1-7",
-                    "score2": "1-7"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "BBC 77 3",
+                    "team1": "ULFTSE BC 1",
                     "team2": "GELDROP BC 2",
-                    "score1": "1-7",
-                    "score2": "1-7"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 2",
-                    "team2": "WEERT 67 BC 1",
-                    "score1": "8-0",
-                    "score2": "8-0"
+                    "team2": "BAN 1",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "ECHT BC 2",
+                    "team1": "AMERSFOORT 4",
                     "team2": "GELDROP BC 2",
-                    "score1": "3-5",
-                    "score2": "3-5"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 2",
-                    "team2": "KEEP FIT BC 1",
-                    "score1": "8-0",
-                    "score2": "8-0"
+                    "team2": "ALOUETTE BC 1",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "OLYMPIA 56 BC 2",
+                    "team1": "NETWERK 1",
                     "team2": "GELDROP BC 2",
-                    "score1": "2-6",
-                    "score2": "2-6"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 2",
-                    "team2": "SCC BC 1",
-                    "score1": "8-0",
-                    "score2": "8-0"
+                    "team2": "MARIKEN BC 2",
+                    "score1": "",
+                    "score2": ""
                 }
             ]
         },
         {
             "name": "GELDROP BC 3",
-            "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&team=374",
-            "players": [
-                {
-                    "name": "Chiel van den Broek",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3663",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Tim van Lieshout",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3662",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Tom Peters",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3664",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Quinty van Besouw",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3660",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Femke v Lieshout",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3661",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Dagmar Rijpert",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3658",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Vivianne Timmers",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3656",
-                    "gender": "Female"
-                }
-            ],
+            "id": "id=39A69CCC-55A7-47C2-A19C-E41728508953&team=377",
+            "players": [],
             "matches": [
                 {
                     "team1": "GELDROP BC 3",
-                    "team2": "SMASHING 5",
-                    "score1": "6-2",
-                    "score2": "6-2"
+                    "team2": "OLYMPIA 56 BC 2",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "VEGHEL 67 BC 2",
+                    "team1": "WEERT 67 BC 1",
                     "team2": "GELDROP BC 3",
-                    "score1": "3-5",
-                    "score2": "3-5"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 3",
-                    "team2": "MARIKEN BC 4",
-                    "score1": "3-5",
-                    "score2": "3-5"
-                },
-                {
-                    "team1": "JayMS BCH 4",
-                    "team2": "GELDROP BC 3",
-                    "score1": "4-4",
-                    "score2": "4-4"
+                    "team2": "TRILAN BC 2",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 3",
-                    "team2": "BECA 2000 2",
-                    "score1": "8-0",
-                    "score2": "8-0"
+                    "team2": "SCC BC 1",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "ROOSTERSE BC 5",
+                    "team2": "GELDROP BC 3",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "ECHT BC 1",
+                    "team2": "GELDROP BC 3",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 3",
-                    "team2": "BAVEL BC 1",
-                    "score1": "5-3",
-                    "score2": "5-3"
+                    "team2": "REBEO BC 1",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "ALOUETTE BC 2",
+                    "team1": "OLYMPIA 56 BC 2",
                     "team2": "GELDROP BC 3",
-                    "score1": "6-2",
-                    "score2": "6-2"
-                },
-                {
-                    "team1": "SMASHING 5",
-                    "team2": "GELDROP BC 3",
-                    "score1": "6-2",
-                    "score2": "6-2"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 3",
-                    "team2": "VEGHEL 67 BC 2",
-                    "score1": "4-4",
-                    "score2": "4-4"
+                    "team2": "WEERT 67 BC 1",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "MARIKEN BC 4",
+                    "team1": "TRILAN BC 2",
                     "team2": "GELDROP BC 3",
-                    "score1": "1-7",
-                    "score2": "1-7"
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "SCC BC 1",
+                    "team2": "GELDROP BC 3",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 3",
-                    "team2": "JayMS BCH 4",
-                    "score1": "4-4",
-                    "score2": "4-4"
+                    "team2": "ECHT BC 1",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "REBEO BC 1",
+                    "team2": "GELDROP BC 3",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 3",
-                    "team2": "ALOUETTE BC 2",
-                    "score1": "4-4",
-                    "score2": "4-4"
-                },
-                {
-                    "team1": "BECA 2000 2",
-                    "team2": "GELDROP BC 3",
-                    "score1": "5-3",
-                    "score2": "5-3"
-                },
-                {
-                    "team1": "BAVEL BC 1",
-                    "team2": "GELDROP BC 3",
-                    "score1": "5-3",
-                    "score2": "5-3"
+                    "team2": "ROOSTERSE BC 5",
+                    "score1": "",
+                    "score2": ""
                 }
             ]
         },
         {
             "name": "GELDROP BC 4",
-            "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&team=375",
-            "players": [
-                {
-                    "name": "Johannes Kleyboldt",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3667",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Wouter Kreike",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3666",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Luca Sogaro",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3665",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Niels Voermans",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3653",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Charlotte Blok",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3670",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Marjolein Blok",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3657",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Vinny Lee",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3669",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Femke v Lieshout",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3661",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Noor Lijkema",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3668",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Dagmar Rijpert",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3658",
-                    "gender": "Female"
-                }
-            ],
+            "id": "id=39A69CCC-55A7-47C2-A19C-E41728508953&team=378",
+            "players": [],
             "matches": [
                 {
-                    "team1": "GELDROP BC 4",
-                    "team2": "BEVER BC 2",
-                    "score1": "7-1",
-                    "score2": "7-1"
-                },
-                {
-                    "team1": "ESW BCH 3",
+                    "team1": "ECHT BC 2",
                     "team2": "GELDROP BC 4",
-                    "score1": "7-1",
-                    "score2": "7-1"
-                },
-                {
-                    "team1": "GELDROP BC 4",
-                    "team2": "REESHOF BV 1",
-                    "score1": "3-5",
-                    "score2": "3-5"
-                },
-                {
-                    "team1": "SHOT BC 3",
-                    "team2": "GELDROP BC 4",
-                    "score1": "3-5",
-                    "score2": "3-5"
-                },
-                {
-                    "team1": "GELDROP BC 4",
-                    "team2": "RUDRA UNITED 2",
-                    "score1": "6-2",
-                    "score2": "6-2"
-                },
-                {
-                    "team1": "GELDROP BC 4",
-                    "team2": "GILZE BC 3",
-                    "score1": "7-1",
-                    "score2": "7-1"
-                },
-                {
-                    "team1": "ALOUETTE BC 3",
-                    "team2": "GELDROP BC 4",
-                    "score1": "4-4",
-                    "score2": "4-4"
-                },
-                {
-                    "team1": "BEVER BC 2",
-                    "team2": "GELDROP BC 4",
-                    "score1": "3-5",
-                    "score2": "3-5"
-                },
-                {
-                    "team1": "GELDROP BC 4",
-                    "team2": "ESW BCH 3",
-                    "score1": "2-6",
-                    "score2": "2-6"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "REESHOF BV 1",
                     "team2": "GELDROP BC 4",
-                    "score1": "8-0",
-                    "score2": "8-0"
-                },
-                {
-                    "team1": "GELDROP BC 4",
-                    "team2": "SHOT BC 3",
-                    "score1": "7-1",
-                    "score2": "7-1"
-                },
-                {
-                    "team1": "GILZE BC 3",
-                    "team2": "GELDROP BC 4",
-                    "score1": "4-4",
-                    "score2": "4-4"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 4",
                     "team2": "ALOUETTE BC 3",
-                    "score1": "8-0",
-                    "score2": "8-0"
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "VEGHEL 67 BC 2",
+                    "team2": "GELDROP BC 4",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "GELDROP BC 4",
+                    "team2": "BCH 4",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "GELDROP BC 4",
+                    "team2": "OOSTERHOUT BC 3",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "RUDRA UNITED 2",
                     "team2": "GELDROP BC 4",
-                    "score1": "5-3",
-                    "score2": "5-3"
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "GELDROP BC 4",
+                    "team2": "ECHT BC 2",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "GELDROP BC 4",
+                    "team2": "REESHOF BV 1",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "ALOUETTE BC 3",
+                    "team2": "GELDROP BC 4",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "GELDROP BC 4",
+                    "team2": "VEGHEL 67 BC 2",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "OOSTERHOUT BC 3",
+                    "team2": "GELDROP BC 4",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "GELDROP BC 4",
+                    "team2": "RUDRA UNITED 2",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "BCH 4",
+                    "team2": "GELDROP BC 4",
+                    "score1": "",
+                    "score2": ""
                 }
             ]
         },
         {
             "name": "GELDROP BC 5",
-            "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&team=376",
-            "players": [
-                {
-                    "name": "Koen Hiemstra",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3685",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Johannes Kleyboldt",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3667",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Wouter Kreike",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3666",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Tim van Lieshout",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3662",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Tom Peters",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3664",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Luca Sogaro",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3665",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Rik Sweep",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3672",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Stan Verrijt",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3671",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Niels Voermans",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3653",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Rune van der Vorst",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3680",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Joost Wassink",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=7696",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Fleur Geelen",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3674",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Kim de Haan",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3673",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Julie Spuijbroek",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3687",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Neva van der Vorst",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3675",
-                    "gender": "Female"
-                }
-            ],
+            "id": "id=39A69CCC-55A7-47C2-A19C-E41728508953&team=379",
+            "players": [],
             "matches": [
                 {
-                    "team1": "BCEhv 1",
-                    "team2": "GELDROP BC 5",
-                    "score1": "3-5",
-                    "score2": "3-5"
-                },
-                {
-                    "team1": "GROENE STER BV 1",
-                    "team2": "GELDROP BC 5",
-                    "score1": "5-3",
-                    "score2": "5-3"
+                    "team1": "GELDROP BC 5",
+                    "team2": "VEGHEL 67 BC 3",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 5",
-                    "team2": "RIBAD BV 4",
-                    "score1": "3-5",
-                    "score2": "3-5"
+                    "team2": "ESW BCH 5",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "TFS BARENDRECHT 3",
+                    "team1": "STUBAN NSBC 1",
                     "team2": "GELDROP BC 5",
-                    "score1": "8-0",
-                    "score2": "8-0"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 5",
-                    "team2": "GILZE BC 2",
-                    "score1": "3-5",
-                    "score2": "3-5"
+                    "team2": "SMASHING BC 4",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "GELDROP BC 5",
-                    "team2": "OOSTERHOUT BC 2",
-                    "score1": "3-5",
-                    "score2": "3-5"
-                },
-                {
-                    "team1": "SHOT BC 2",
+                    "team1": "MARIKEN BC 3",
                     "team2": "GELDROP BC 5",
-                    "score1": "6-2",
-                    "score2": "6-2"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "GELDROP BC 5",
-                    "team2": "BCEhv 1",
-                    "score1": "7-1",
-                    "score2": "7-1"
-                },
-                {
-                    "team1": "GELDROP BC 5",
-                    "team2": "GROENE STER BV 1",
-                    "score1": "4-4",
-                    "score2": "4-4"
-                },
-                {
-                    "team1": "RIBAD BV 4",
+                    "team1": "GOVA BC 1",
                     "team2": "GELDROP BC 5",
-                    "score1": "4-4",
-                    "score2": "4-4"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 5",
-                    "team2": "TFS BARENDRECHT 3",
-                    "score1": "2-6",
-                    "score2": "2-6"
+                    "team2": "NETWERK 2",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "OOSTERHOUT BC 2",
+                    "team1": "VEGHEL 67 BC 3",
                     "team2": "GELDROP BC 5",
-                    "score1": "2-6",
-                    "score2": "2-6"
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "ESW BCH 5",
+                    "team2": "GELDROP BC 5",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 5",
-                    "team2": "SHOT BC 2",
-                    "score1": "3-5",
-                    "score2": "3-5"
+                    "team2": "STUBAN NSBC 1",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "GILZE BC 2",
+                    "team1": "SMASHING BC 4",
                     "team2": "GELDROP BC 5",
-                    "score1": "7-1",
-                    "score2": "7-1"
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "GELDROP BC 5",
+                    "team2": "GOVA BC 1",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "NETWERK 2",
+                    "team2": "GELDROP BC 5",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "GELDROP BC 5",
+                    "team2": "MARIKEN BC 3",
+                    "score1": "",
+                    "score2": ""
                 }
             ]
         },
         {
             "name": "GELDROP BC 6",
-            "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&team=377",
-            "players": [
-                {
-                    "name": "Marijn van Beers",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=6638",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Yorick Doornbos",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3676",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Kars van der Laan",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3677",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Mark vd Veerdonk",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=7676",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Rune van der Vorst",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3680",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Eva van Dongen",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3678",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Ilse van de Leur",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3679",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Eva Roggeveen",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3683",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Stephanie van Zijl",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3684",
-                    "gender": "Female"
-                }
-            ],
+            "id": "id=39A69CCC-55A7-47C2-A19C-E41728508953&team=380",
+            "players": [],
             "matches": [
                 {
-                    "team1": "GELDROP BC 6",
-                    "team2": "Bloemen Parket TRILAN BC 4",
-                    "score1": "2-6",
-                    "score2": "2-6"
-                },
-                {
-                    "team1": "GELDROP BC 6",
-                    "team2": "BBC 77 4",
-                    "score1": "1-7",
-                    "score2": "1-7"
-                },
-                {
-                    "team1": "Paul Knip Keukens Roosterse BC 5",
-                    "team2": "GELDROP BC 6",
-                    "score1": "7-1",
-                    "score2": "7-1"
-                },
-                {
-                    "team1": "GELDROP BC 6",
-                    "team2": "ECHT BC 3",
-                    "score1": "1-7",
-                    "score2": "1-7"
-                },
-                {
-                    "team1": "SCC BC 2",
-                    "team2": "GELDROP BC 6",
-                    "score1": "7-1",
-                    "score2": "7-1"
-                },
-                {
-                    "team1": "REBEO BC 1",
-                    "team2": "GELDROP BC 6",
-                    "score1": "8-0",
-                    "score2": "8-0"
-                },
-                {
-                    "team1": "GELDROP BC 6",
-                    "team2": "OLYMPIA 56 BC 3",
-                    "score1": "",
-                    "score2": ""
-                },
-                {
-                    "team1": "BBC 77 4",
-                    "team2": "GELDROP BC 6",
-                    "score1": "6-2",
-                    "score2": "6-2"
-                },
-                {
-                    "team1": "GELDROP BC 6",
-                    "team2": "Paul Knip Keukens Roosterse BC 5",
-                    "score1": "4-4",
-                    "score2": "4-4"
-                },
-                {
-                    "team1": "ECHT BC 3",
-                    "team2": "GELDROP BC 6",
-                    "score1": "8-0",
-                    "score2": "8-0"
-                },
-                {
-                    "team1": "Bloemen Parket TRILAN BC 4",
-                    "team2": "GELDROP BC 6",
-                    "score1": "7-1",
-                    "score2": "7-1"
-                },
-                {
-                    "team1": "GELDROP BC 6",
-                    "team2": "REBEO BC 1",
-                    "score1": "0-8",
-                    "score2": "0-8"
-                },
-                {
-                    "team1": "OLYMPIA 56 BC 3",
+                    "team1": "VENRAY BC 1",
                     "team2": "GELDROP BC 6",
                     "score1": "",
                     "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 6",
-                    "team2": "SCC BC 2",
-                    "score1": "1-7",
-                    "score2": "1-7"
+                    "team2": "PANACHE ESBV 1",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "BCEhv 1",
+                    "team2": "GELDROP BC 6",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "VBSC 1",
+                    "team2": "GELDROP BC 6",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "GELDROP BC 6",
+                    "team2": "WEERT 67 BC 2",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "GELDROP BC 6",
+                    "team2": "TRILAN BC 4",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "GELDROP BC 6",
+                    "team2": "VENRAY BC 1",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "PANACHE ESBV 1",
+                    "team2": "GELDROP BC 6",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "GELDROP BC 6",
+                    "team2": "BCEhv 1",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "GELDROP BC 6",
+                    "team2": "VBSC 1",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "TRILAN BC 4",
+                    "team2": "GELDROP BC 6",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "WEERT 67 BC 2",
+                    "team2": "GELDROP BC 6",
+                    "score1": "",
+                    "score2": ""
                 }
             ]
         },
         {
             "name": "GELDROP BC 7",
-            "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&team=378",
-            "players": [
-                {
-                    "name": "Marijn van Beers",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=6638",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Yorick Doornbos",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3676",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Tom Duijf",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=6231",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Koen Hiemstra",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3685",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Kars van der Laan",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3677",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Tijs Lemm",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3682",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Joeri Roelofs",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3686",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Sem Roggeveen",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3681",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Rune van der Vorst",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3680",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Stephanie van Besouw",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=7400",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Lieke Boleij",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=7831",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Eva van Dongen",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3678",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Iris Geelen",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=7992",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Iris Jansen op de Haar",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=6639",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Martine Kortlandt",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3688",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Ilse van de Leur",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3679",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Eva Roggeveen",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3683",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Stephanie van Zijl",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3684",
-                    "gender": "Female"
-                }
-            ],
+            "id": "id=39A69CCC-55A7-47C2-A19C-E41728508953&team=381",
+            "players": [],
             "matches": [
                 {
-                    "team1": "GILZE BC 4",
+                    "team1": "REESHOF BV 2",
                     "team2": "GELDROP BC 7",
-                    "score1": "5-3",
-                    "score2": "5-3"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 7",
-                    "team2": "OOSTERHOUT BC 4",
-                    "score1": "5-3",
-                    "score2": "5-3"
-                },
-                {
-                    "team1": "ZWALUWEN DE BC 3",
-                    "team2": "GELDROP BC 7",
-                    "score1": "8-0",
-                    "score2": "8-0"
-                },
-                {
-                    "team1": "GELDROP BC 7",
-                    "team2": "REESHOF BV 3",
-                    "score1": "4-4",
-                    "score2": "4-4"
-                },
-                {
-                    "team1": "GELDROP BC 7",
-                    "team2": "HTC HVI BCH 5",
-                    "score1": "3-5",
-                    "score2": "3-5"
+                    "team2": "TILBURG BC 2",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "VEGHEL 67 BC 4",
                     "team2": "GELDROP BC 7",
-                    "score1": "7-1",
-                    "score2": "7-1"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 7",
-                    "team2": "GILZE BC 4",
-                    "score1": "4-4",
-                    "score2": "4-4"
-                },
-                {
-                    "team1": "OOSTERHOUT BC 4",
-                    "team2": "GELDROP BC 7",
-                    "score1": "4-4",
-                    "score2": "4-4"
+                    "team2": "BCH 6",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 7",
-                    "team2": "ZWALUWEN DE BC 3",
-                    "score1": "0-8",
-                    "score2": "0-8"
+                    "team2": "OIRSCHOT BC 1",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "BCEhv 2",
+                    "team1": "RUDRA UNITED 4",
                     "team2": "GELDROP BC 7",
-                    "score1": "5-3",
-                    "score2": "5-3"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "HTC HVI BCH 5",
+                    "team1": "GELDROP BC 7",
+                    "team2": "REESHOF BV 2",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "TILBURG BC 2",
                     "team2": "GELDROP BC 7",
-                    "score1": "7-1",
-                    "score2": "7-1"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 7",
                     "team2": "VEGHEL 67 BC 4",
-                    "score1": "3-5",
-                    "score2": "3-5"
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "OIRSCHOT BC 1",
+                    "team2": "GELDROP BC 7",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 7",
-                    "team2": "BCEhv 2",
-                    "score1": "7-1",
-                    "score2": "7-1"
+                    "team2": "RUDRA UNITED 4",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "REESHOF BV 3",
+                    "team1": "BCH 6",
                     "team2": "GELDROP BC 7",
-                    "score1": "5-3",
-                    "score2": "5-3"
+                    "score1": "",
+                    "score2": ""
                 }
             ]
         },
         {
             "name": "GELDROP BC 8",
-            "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&team=379",
-            "players": [
-                {
-                    "name": "Tom Duijf",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=6231",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Koen Hiemstra",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3685",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Joeri Roelofs",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3686",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Stephanie van Besouw",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=7400",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Martine Kortlandt",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3688",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Britt van Lieshout",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3689",
-                    "gender": "Female"
-                },
-                {
-                    "name": "Julie Spuijbroek",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3687",
-                    "gender": "Female"
-                }
-            ],
+            "id": "id=39A69CCC-55A7-47C2-A19C-E41728508953&team=382",
+            "players": [],
             "matches": [
                 {
-                    "team1": "VENRAY BC 1",
-                    "team2": "GELDROP BC 8",
-                    "score1": "5-3",
-                    "score2": "5-3"
-                },
-                {
-                    "team1": "BUDEL BC 1",
-                    "team2": "GELDROP BC 8",
-                    "score1": "3-5",
-                    "score2": "3-5"
-                },
-                {
-                    "team1": "GELDROP BC 8",
-                    "team2": "RUDRA UNITED 3",
-                    "score1": "5-3",
-                    "score2": "5-3"
-                },
-                {
-                    "team1": "VEGHEL 67 BC 3",
-                    "team2": "GELDROP BC 8",
-                    "score1": "5-3",
-                    "score2": "5-3"
-                },
-                {
-                    "team1": "GELDROP BC 8",
-                    "team2": "Paul Knip Keukens Roosterse BC 6",
-                    "score1": "2-6",
-                    "score2": "2-6"
-                },
-                {
-                    "team1": "GELDROP BC 8",
-                    "team2": "ALOUETTE BC 4",
-                    "score1": "",
-                    "score2": ""
-                },
-                {
-                    "team1": "CT deBoer BCH 6",
-                    "team2": "GELDROP BC 8",
-                    "score1": "2-6",
-                    "score2": "2-6"
-                },
-                {
-                    "team1": "GELDROP BC 8",
-                    "team2": "VENRAY BC 1",
-                    "score1": "4-4",
-                    "score2": "4-4"
-                },
-                {
-                    "team1": "GELDROP BC 8",
-                    "team2": "BUDEL BC 1",
-                    "score1": "6-2",
-                    "score2": "6-2"
-                },
-                {
-                    "team1": "RUDRA UNITED 3",
-                    "team2": "GELDROP BC 8",
-                    "score1": "4-4",
-                    "score2": "4-4"
-                },
-                {
-                    "team1": "GELDROP BC 8",
-                    "team2": "VEGHEL 67 BC 3",
-                    "score1": "2-6",
-                    "score2": "2-6"
-                },
-                {
-                    "team1": "ALOUETTE BC 4",
+                    "team1": "WEERT 67 BC 3",
                     "team2": "GELDROP BC 8",
                     "score1": "",
                     "score2": ""
                 },
                 {
                     "team1": "GELDROP BC 8",
-                    "team2": "CT deBoer BCH 6",
-                    "score1": "6-2",
-                    "score2": "6-2"
+                    "team2": "TRILAN BC 5",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "Paul Knip Keukens Roosterse BC 6",
+                    "team1": "GELDROP BC 8",
+                    "team2": "SCC BC 3",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "VICTORIA BC 1",
                     "team2": "GELDROP BC 8",
-                    "score1": "5-3",
-                    "score2": "5-3"
-                }
-            ]
-        },
-        {
-            "name": "GELDROP BC 9",
-            "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&team=380",
-            "players": [
-                {
-                    "name": "Ian Duijf",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3695",
-                    "gender": "Male"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "name": "Pim Gimbel",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3691",
-                    "gender": "Male"
+                    "team1": "VBSC 2",
+                    "team2": "GELDROP BC 8",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "name": "Jelle Nijhoff",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3690",
-                    "gender": "Male"
+                    "team1": "GELDROP BC 8",
+                    "team2": "PUPKE T BC 1",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "name": "Dick ter Schiphorst",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3692",
-                    "gender": "Male"
+                    "team1": "GELDROP BC 8",
+                    "team2": "WEERT 67 BC 3",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "name": "Maura Kunst",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3699",
-                    "gender": "Female"
+                    "team1": "TRILAN BC 5",
+                    "team2": "GELDROP BC 8",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "name": "Estelle Merkx",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3694",
-                    "gender": "Female"
+                    "team1": "SCC BC 3",
+                    "team2": "GELDROP BC 8",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "name": "Kyra van Sikkelerus",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3693",
-                    "gender": "Female"
-                }
-            ],
-            "matches": [
-                {
-                    "team1": "GELDROP BC 9",
-                    "team2": "VEGHEL 67 BC 5",
-                    "score1": "2-6",
-                    "score2": "2-6"
+                    "team1": "GELDROP BC 8",
+                    "team2": "VBSC 2",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "GELDROP BC 9",
-                    "team2": "VBSC 1",
-                    "score1": "0-8",
-                    "score2": "0-8"
+                    "team1": "PUPKE T BC 1",
+                    "team2": "GELDROP BC 8",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "STUBAN NSBC 5",
-                    "team2": "GELDROP BC 9",
-                    "score1": "4-4",
-                    "score2": "4-4"
-                },
-                {
-                    "team1": "GELDROP BC 9",
-                    "team2": "LITH BC 1",
-                    "score1": "2-6",
-                    "score2": "2-6"
-                },
-                {
-                    "team1": "OSS BC 1",
-                    "team2": "GELDROP BC 9",
-                    "score1": "6-2",
-                    "score2": "6-2"
-                },
-                {
-                    "team1": "RUDRA UNITED 4",
-                    "team2": "GELDROP BC 9",
-                    "score1": "6-2",
-                    "score2": "6-2"
-                },
-                {
-                    "team1": "VEGHEL 67 BC 5",
-                    "team2": "GELDROP BC 9",
-                    "score1": "6-2",
-                    "score2": "6-2"
-                },
-                {
-                    "team1": "VBSC 1",
-                    "team2": "GELDROP BC 9",
-                    "score1": "8-0",
-                    "score2": "8-0"
-                },
-                {
-                    "team1": "GELDROP BC 9",
-                    "team2": "STUBAN NSBC 5",
-                    "score1": "1-7",
-                    "score2": "1-7"
-                },
-                {
-                    "team1": "LITH BC 1",
-                    "team2": "GELDROP BC 9",
-                    "score1": "8-0",
-                    "score2": "8-0"
-                },
-                {
-                    "team1": "GELDROP BC 9",
-                    "team2": "RUDRA UNITED 4",
-                    "score1": "3-5",
-                    "score2": "3-5"
-                },
-                {
-                    "team1": "GELDROP BC 9",
-                    "team2": "OSS BC 1",
-                    "score1": "1-7",
-                    "score2": "1-7"
+                    "team1": "GELDROP BC 8",
+                    "team2": "VICTORIA BC 1",
+                    "score1": "",
+                    "score2": ""
                 }
             ]
         },
         {
             "name": "GELDROP BC M1",
-            "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&team=382",
-            "players": [
-                {
-                    "name": "Boris Baneke",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3701",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Marijn van Beers",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=6638",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Rogier Dijker",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3702",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Ian Duijf",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3695",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Pim Gimbel",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3691",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Koen Hiemstra",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3685",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Bram van de Kruijs",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3700",
-                    "gender": "Male"
-                },
-                {
-                    "name": "Jim Overkamp",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3703",
-                    "gender": "Male"
-                },
-                {
-                    "name": "KinFatt Phoon",
-                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3704",
-                    "gender": "Male"
-                }
-            ],
+            "id": "id=39A69CCC-55A7-47C2-A19C-E41728508953&team=383",
+            "players": [],
             "matches": [
                 {
-                    "team1": "DRUTEN BC M1",
+                    "team1": "VBSC M1",
                     "team2": "GELDROP BC M1",
-                    "score1": "3-5",
-                    "score2": "3-5"
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "ECHT BC M2",
+                    "team2": "GELDROP BC M1",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "ALOUETTE BC M3",
+                    "team2": "GELDROP BC M1",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC M1",
-                    "team2": "GESTEL BC M1",
-                    "score1": "3-5",
-                    "score2": "3-5"
+                    "team2": "RUDRA UNITED M1",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC M1",
-                    "team2": "DETO BC M1",
-                    "score1": "5-3",
-                    "score2": "5-3"
+                    "team2": "ALOUETTE BC M4",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "GELDROP BC M1",
-                    "team2": "ALOUETTE BC M1",
-                    "score1": "3-5",
-                    "score2": "3-5"
-                },
-                {
-                    "team1": "ELST BC M1",
+                    "team1": "LIESHOUT BC M1",
                     "team2": "GELDROP BC M1",
-                    "score1": "2-6",
-                    "score2": "2-6"
-                },
-                {
-                    "team1": "SMASHING M1",
-                    "team2": "GELDROP BC M1",
-                    "score1": "6-2",
-                    "score2": "6-2"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC M1",
                     "team2": "VBSC M1",
-                    "score1": "5-3",
-                    "score2": "5-3"
-                },
-                {
-                    "team1": "GESTEL BC M1",
-                    "team2": "GELDROP BC M1",
-                    "score1": "6-2",
-                    "score2": "6-2"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC M1",
-                    "team2": "DRUTEN BC M1",
-                    "score1": "5-3",
-                    "score2": "5-3"
-                },
-                {
-                    "team1": "DETO BC M1",
-                    "team2": "GELDROP BC M1",
-                    "score1": "6-2",
-                    "score2": "6-2"
-                },
-                {
-                    "team1": "ALOUETTE BC M1",
-                    "team2": "GELDROP BC M1",
-                    "score1": "5-3",
-                    "score2": "5-3"
+                    "team2": "ECHT BC M2",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC M1",
-                    "team2": "ELST BC M1",
-                    "score1": "3-5",
-                    "score2": "3-5"
+                    "team2": "ALOUETTE BC M3",
+                    "score1": "",
+                    "score2": ""
                 },
                 {
-                    "team1": "VBSC M1",
+                    "team1": "ALOUETTE BC M4",
                     "team2": "GELDROP BC M1",
-                    "score1": "6-2",
-                    "score2": "6-2"
+                    "score1": "",
+                    "score2": ""
                 },
                 {
                     "team1": "GELDROP BC M1",
-                    "team2": "SMASHING M1",
-                    "score1": "2-6",
-                    "score2": "2-6"
+                    "team2": "LIESHOUT BC M1",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "RUDRA UNITED M1",
+                    "team2": "GELDROP BC M1",
+                    "score1": "",
+                    "score2": ""
                 }
             ]
         }
