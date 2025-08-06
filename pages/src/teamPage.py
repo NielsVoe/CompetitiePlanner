@@ -1,23 +1,47 @@
 import streamlit as st
 from src.Club import Club
 from src.Team import Team
+from src.Gender import Gender
+from enum import Enum
+
+class FilterType(Enum):
+    ALL = 0
+    HOME = 1
+    AWAY = 2
+
 
 class TeamPage:
     def __init__(self, club: Club, teamName: str = ""):
         self.club = club
         self.teamName = teamName
+        self.team:Team = None
+        self.teamDiv:list = []
+        self.matchDivs:list = []
+    
+    def SetTeam(self):
+        teams = self.club.GetTeams()
+        for team in teams:
+            if team.name == self.teamName:
+                self.team = team
 
     def DisplayTeam(self):
-        teams = self.club.GetTeams()
-        team:Team = None
-        for t in teams:
-            if t.name == self.teamName:
-                team = t
-                break
-        if team:
-            st.subheader(team.name)
-            st.write("Players:")
-            for player in team.players:
-                st.write(f"- {player.name}")
-        else:
-            st.write("Team not found.")
+        if not self.team:
+            self.SetTeam()
+        col1, col2 = st.columns(2)
+        for player in self.team.players:
+            if player.GetGender() is Gender.MALE:
+                col1.write(f"**{player.name}**")
+            else:
+                col2.write(f"**{player.name}**")
+
+    def DisplayMatches(self, filter:FilterType = FilterType.ALL):
+        if not self.team:
+            self.SetTeam()
+        self.matchDivs.clear()
+        for match in self.team.GetMatches():
+            if filter == FilterType.ALL:
+                self.matchDivs.append(st.write(f"{match}"))
+            elif filter == FilterType.HOME and match.GetHomeTeam() == self.team.name:
+                self.matchDivs.append(st.write(f"{match}"))
+            elif filter == FilterType.AWAY and match.GetAwayTeam() == self.team.name:
+                self.matchDivs.append(st.write(f"{match}"))

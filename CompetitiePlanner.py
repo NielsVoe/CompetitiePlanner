@@ -3,8 +3,9 @@ from src.Club import Club
 from src.Team import Team
 from src.Player import Player
 from src.Gender import Gender
+from src.Teammatch import Teammatch
 
-club = Club("GELDROP BC", 10)
+club = Club("GELDROP BC", 9)
 url = "https://badmintonnederland.toernooi.nl/sport/clubs.aspx?id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7"
 
 def GetUrl() -> str:
@@ -19,8 +20,7 @@ def RetrieveData():
     for t in teams:
         teamID = t["ID"]
         team = Team(t["Team"], teamID)
-        players = competitie.GetPlayers(teamID)
-        for p in players:
+        for p in competitie.GetPlayers(teamID):
             playerID = p["ID"]
             vastSpeler = p["VastSpeler"]
             playerName = p["Name"]
@@ -28,6 +28,14 @@ def RetrieveData():
             player = Player(playerName, playerID, gender)
             if vastSpeler:
                 team.AddPlayer(player)
+        for m in competitie.GetMatches(teamID):
+            matchDate = m["Date"]
+            home = m["Home"]
+            away = m["Away"]
+            result = m["Result"]
+            match = Teammatch(home, away, result, result, matchDate)
+            if not team.AddMatch(match):
+                print(f"Match {match} already exists in team {team.name}")
         club.AddTeam(team)
 
 def GetClub():
