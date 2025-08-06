@@ -1,0 +1,593 @@
+{
+    "name": "GELDROP BC",
+    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&club=86",
+    "courtsAvailable": 10,
+    "teams": [
+        {
+            "name": "GELDROP BC 1",
+            "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&team=372",
+            "players": [
+                {
+                    "name": "Jochem de Greef",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3650",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Bas van Hoof",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3654",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Gijs Schreppers",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3655",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Twan van de Weijer",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3649",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Annelies Blok",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3659",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Yvette Daans",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3652",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Linde James",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3651",
+                    "gender": "Female"
+                }
+            ]
+        },
+        {
+            "name": "GELDROP BC 10",
+            "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&team=381",
+            "players": [
+                {
+                    "name": "Ian Duijf",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3695",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Daniel Mulkens",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3697",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Levi Neijts",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3696",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Iris Hoefnagels",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=7301",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Maura Kunst",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3699",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Sara Sogaro",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3698",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Loes Tönnissen",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=7425",
+                    "gender": "Female"
+                }
+            ]
+        },
+        {
+            "name": "GELDROP BC 2",
+            "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&team=373",
+            "players": [
+                {
+                    "name": "Bas van Hoof",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3654",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Tim van Lieshout",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=6862",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Gijs Schreppers",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3655",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Niels Voermans",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3653",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Annelies Blok",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3659",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Marjolein Blok",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3657",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Dagmar Rijpert",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3658",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Vivianne Timmers",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3656",
+                    "gender": "Female"
+                }
+            ]
+        },
+        {
+            "name": "GELDROP BC 3",
+            "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&team=374",
+            "players": [
+                {
+                    "name": "Chiel van den Broek",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3663",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Tim van Lieshout",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3662",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Tom Peters",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3664",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Quinty van Besouw",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3660",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Femke v Lieshout",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3661",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Dagmar Rijpert",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3658",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Vivianne Timmers",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3656",
+                    "gender": "Female"
+                }
+            ]
+        },
+        {
+            "name": "GELDROP BC 4",
+            "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&team=375",
+            "players": [
+                {
+                    "name": "Johannes Kleyboldt",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3667",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Wouter Kreike",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3666",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Luca Sogaro",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3665",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Niels Voermans",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3653",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Charlotte Blok",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3670",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Marjolein Blok",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3657",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Vinny Lee",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3669",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Femke v Lieshout",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3661",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Noor Lijkema",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3668",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Dagmar Rijpert",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3658",
+                    "gender": "Female"
+                }
+            ]
+        },
+        {
+            "name": "GELDROP BC 5",
+            "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&team=376",
+            "players": [
+                {
+                    "name": "Koen Hiemstra",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3685",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Johannes Kleyboldt",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3667",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Wouter Kreike",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3666",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Tim van Lieshout",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3662",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Tom Peters",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3664",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Luca Sogaro",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3665",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Rik Sweep",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3672",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Stan Verrijt",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3671",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Niels Voermans",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3653",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Rune van der Vorst",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3680",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Joost Wassink",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=7696",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Fleur Geelen",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3674",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Kim de Haan",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3673",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Julie Spuijbroek",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3687",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Neva van der Vorst",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3675",
+                    "gender": "Female"
+                }
+            ]
+        },
+        {
+            "name": "GELDROP BC 6",
+            "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&team=377",
+            "players": [
+                {
+                    "name": "Marijn van Beers",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=6638",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Yorick Doornbos",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3676",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Kars van der Laan",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3677",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Mark vd Veerdonk",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=7676",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Rune van der Vorst",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3680",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Eva van Dongen",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3678",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Ilse van de Leur",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3679",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Eva Roggeveen",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3683",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Stephanie van Zijl",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3684",
+                    "gender": "Female"
+                }
+            ]
+        },
+        {
+            "name": "GELDROP BC 7",
+            "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&team=378",
+            "players": [
+                {
+                    "name": "Marijn van Beers",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=6638",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Yorick Doornbos",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3676",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Tom Duijf",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=6231",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Koen Hiemstra",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3685",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Kars van der Laan",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3677",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Tijs Lemm",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3682",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Joeri Roelofs",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3686",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Sem Roggeveen",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3681",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Rune van der Vorst",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3680",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Stephanie van Besouw",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=7400",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Lieke Boleij",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=7831",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Eva van Dongen",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3678",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Iris Geelen",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=7992",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Iris Jansen op de Haar",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=6639",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Martine Kortlandt",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3688",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Ilse van de Leur",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3679",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Eva Roggeveen",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3683",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Stephanie van Zijl",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3684",
+                    "gender": "Female"
+                }
+            ]
+        },
+        {
+            "name": "GELDROP BC 8",
+            "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&team=379",
+            "players": [
+                {
+                    "name": "Tom Duijf",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=6231",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Koen Hiemstra",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3685",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Joeri Roelofs",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3686",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Stephanie van Besouw",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=7400",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Martine Kortlandt",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3688",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Britt van Lieshout",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3689",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Julie Spuijbroek",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3687",
+                    "gender": "Female"
+                }
+            ]
+        },
+        {
+            "name": "GELDROP BC 9",
+            "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&team=380",
+            "players": [
+                {
+                    "name": "Ian Duijf",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3695",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Pim Gimbel",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3691",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Jelle Nijhoff",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3690",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Dick ter Schiphorst",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3692",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Maura Kunst",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3699",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Estelle Merkx",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3694",
+                    "gender": "Female"
+                },
+                {
+                    "name": "Kyra van Sikkelerus",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3693",
+                    "gender": "Female"
+                }
+            ]
+        },
+        {
+            "name": "GELDROP BC M1",
+            "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&team=382",
+            "players": [
+                {
+                    "name": "Boris Baneke",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3701",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Marijn van Beers",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=6638",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Rogier Dijker",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3702",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Ian Duijf",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3695",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Pim Gimbel",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3691",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Koen Hiemstra",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3685",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Bram van de Kruijs",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3700",
+                    "gender": "Male"
+                },
+                {
+                    "name": "Jim Overkamp",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3703",
+                    "gender": "Male"
+                },
+                {
+                    "name": "KinFatt Phoon",
+                    "id": "id=B1A6EFC2-20ED-499C-8EF0-07D734E0B4B7&player=3704",
+                    "gender": "Male"
+                }
+            ]
+        }
+    ]
+}

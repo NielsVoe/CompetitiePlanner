@@ -1,6 +1,7 @@
 from src.Team import Team
+from src.Serialize import Serialize
 
-class Club:
+class Club(Serialize):
     def __init__(self, name:str, courtsAvailable:int, id:str=""):
         self.name = name
         self.id = id
@@ -21,3 +22,11 @@ class Club:
             return False
         self.teams.append(team)
         return True
+    
+    def ToDict(self):
+        return {
+            "name": self.name,
+            "id": self.id,
+            "courtsAvailable": self.courtsAvailable,
+            "teams": [team.ToDict() for team in self.teams]
+        }

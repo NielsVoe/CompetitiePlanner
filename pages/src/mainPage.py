@@ -3,6 +3,7 @@ import CompetitiePlanner as CP
 from src.Club import Club
 from src.Gender import Gender
 import pandas as pd
+from src.JSONHandler import JSONHandler
 
 st.title("Uitleg Competitie Planner")
 
@@ -32,7 +33,14 @@ if CP.GetClub().GetTeams():
     })
     table.table(df)
 
-refreshData = st.button("Ververs data")
+# Check if club data json file is not empty
+if not JSONHandler.IsEmpty("data/club.json"):
+    try:
+        CP.GetClub().FromDict(JSONHandler.Import("data/club.json"))
+    except Exception as e:
+        st.error(f"Fout bij het laden van clubgegevens: {e}")
+
+refreshData = st.button("Ververs data", key="refreshData")
 
 if refreshData:
     table.empty()
@@ -47,3 +55,5 @@ if refreshData:
     })
 
     table.table(df)
+
+    JSONHandler.Export(CP.GetClub().ToDict(), "data/club.json")

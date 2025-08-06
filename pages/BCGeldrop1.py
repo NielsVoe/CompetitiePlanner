@@ -9,7 +9,7 @@ club = MainPage.GetClub()
 team = TeamPage(club, "GELDROP BC 1")
 team.DisplayTeam()
 
-refreshButton = st.button("Ververs data")
+refreshButton = st.button("Ververs data", key="")
 
 if refreshButton:
     team.DisplayTeam()

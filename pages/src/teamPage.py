@@ -21,7 +21,3 @@ class TeamPage:
                 st.write(f"- {player.name}")
         else:
             st.write("Team not found.")
-
-st.title("Teams")
-
-st.write("This page will display the teams and their players.")

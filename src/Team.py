@@ -1,6 +1,7 @@
 from src.Player import Player
+from src.Serialize import Serialize
 
-class Team:
+class Team(Serialize):
     def __init__(self, name: str, id: str):
         self.id = id
         self.name = name
@@ -14,3 +15,10 @@ class Team:
 
     def __str__(self) -> str:
         return f"Team {self.name} with members: {', '.join(self.players)}"
+    
+    def ToDict(self) -> dict:
+        return {
+            "name": self.name,
+            "id": self.id,
+            "players": [player.ToDict() for player in self.players]
+        }
