@@ -16,6 +16,12 @@ class Club(Serialize):
 
     def GetTeams(self) -> list[Team]:
         return self.teams
+    
+    def GetSingleTeam(self, teamName:str) -> Team:
+        for team in self.teams:
+            if team.name == teamName:
+                return team
+        return None
 
     def AddTeam(self, team:Team) -> bool:
         if team in self.teams:

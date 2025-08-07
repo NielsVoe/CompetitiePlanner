@@ -2,13 +2,7 @@ import streamlit as st
 from src.Club import Club
 from src.Team import Team
 from src.Gender import Gender
-from enum import Enum
-
-class FilterType(Enum):
-    ALL = 0
-    HOME = 1
-    AWAY = 2
-
+from src.FilterType import FilterType
 
 class TeamPage:
     def __init__(self, club: Club, teamName: str = ""):
