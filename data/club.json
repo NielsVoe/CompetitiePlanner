@@ -1,6 +1,6 @@
 {
     "name": "GELDROP BC",
-    "id": "id=39A69CCC-55A7-47C2-A19C-E41728508953&club=81",
+    "id": "id=FF2D14A0-938B-45DB-A51F-63DAEC8F3F63&club=58",
     "courtsAvailable": 9,
     "teams": [
         {
@@ -769,6 +769,186 @@
                 {
                     "team1": "RUDRA UNITED M1",
                     "team2": "GELDROP BC M1",
+                    "score1": "",
+                    "score2": ""
+                }
+            ]
+        },
+        {
+            "name": "GELDROP BC J1",
+            "id": "id=FF2D14A0-938B-45DB-A51F-63DAEC8F3F63&team=282",
+            "players": [],
+            "matches": [
+                {
+                    "team1": "FST WAALWIJK J2",
+                    "team2": "GELDROP BC J1",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "GELDROP BC J1",
+                    "team2": "OSS BC J1",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "VEGHEL 67 BC J1",
+                    "team2": "GELDROP BC J1",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "GELDROP BC J1",
+                    "team2": "SHOT BC J1",
+                    "score1": "",
+                    "score2": ""
+                }
+            ]
+        },
+        {
+            "name": "GELDROP BC J2",
+            "id": "id=FF2D14A0-938B-45DB-A51F-63DAEC8F3F63&team=283",
+            "players": [],
+            "matches": [
+                {
+                    "team1": "GELDROP BC J2",
+                    "team2": "REBEO BC J1",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "OLYMPIA 56 BC J2",
+                    "team2": "GELDROP BC J2",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "ECHT BC J1",
+                    "team2": "GELDROP BC J2",
+                    "score1": "",
+                    "score2": ""
+                }
+            ]
+        },
+        {
+            "name": "GELDROP BC J3",
+            "id": "id=FF2D14A0-938B-45DB-A51F-63DAEC8F3F63&team=284",
+            "players": [],
+            "matches": [
+                {
+                    "team1": "MAASDROPPERS BC J2",
+                    "team2": "GELDROP BC J3",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "GELDROP BC J3",
+                    "team2": "GOOD LUCK BC J1",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "GELDROP BC J3",
+                    "team2": "UNITED BC J1",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "OLYMPIA 56 BC J4",
+                    "team2": "GELDROP BC J3",
+                    "score1": "",
+                    "score2": ""
+                }
+            ]
+        },
+        {
+            "name": "GELDROP BC J4",
+            "id": "id=FF2D14A0-938B-45DB-A51F-63DAEC8F3F63&team=285",
+            "players": [],
+            "matches": [
+                {
+                    "team1": "REESHOF BV J3",
+                    "team2": "GELDROP BC J4",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "GELDROP BC J4",
+                    "team2": "VBSC J4",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "VEGHEL 67 BC J2",
+                    "team2": "GELDROP BC J4",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "GELDROP BC J4",
+                    "team2": "RUDRA UNITED J2",
+                    "score1": "",
+                    "score2": ""
+                }
+            ]
+        },
+        {
+            "name": "GELDROP BC J5",
+            "id": "id=FF2D14A0-938B-45DB-A51F-63DAEC8F3F63&team=286",
+            "players": [],
+            "matches": [
+                {
+                    "team1": "GELDROP BC J5",
+                    "team2": "VBSC J5",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "ALOUETTE BC J3",
+                    "team2": "GELDROP BC J5",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "WEERT 67 BC J1",
+                    "team2": "GELDROP BC J5",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "GELDROP BC J5",
+                    "team2": "BCEhv J4",
+                    "score1": "",
+                    "score2": ""
+                }
+            ]
+        },
+        {
+            "name": "GELDROP BC J6",
+            "id": "id=FF2D14A0-938B-45DB-A51F-63DAEC8F3F63&team=287",
+            "players": [],
+            "matches": [
+                {
+                    "team1": "GELDROP BC J6",
+                    "team2": "RUDRA UNITED J4",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "LIESHOUT BC J2",
+                    "team2": "GELDROP BC J6",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "REESHOF BV J7",
+                    "team2": "GELDROP BC J6",
+                    "score1": "",
+                    "score2": ""
+                },
+                {
+                    "team1": "GELDROP BC J6",
+                    "team2": "VEGHEL 67 BC J4",
                     "score1": "",
                     "score2": ""
                 }
