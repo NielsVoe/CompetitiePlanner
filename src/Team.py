@@ -28,7 +28,7 @@ class Team(Serialize):
         return self.players
 
     def __str__(self) -> str:
-        return f"Team {self.name} with members: {', '.join(self.players)}"
+        return f"Team {self.name} with members: {', '.join(str(player) for player in self.players)}"
     
     def ToDict(self) -> dict:
         return {
