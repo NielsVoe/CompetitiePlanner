@@ -21,5 +21,5 @@ class Date(Serialize):
         return {
             "day": self.day,
             "date": self.date.strftime("%d-%m-%Y"),
-            "time": self.time.strftime("%H:%M")
+            "time": self.time
         }
