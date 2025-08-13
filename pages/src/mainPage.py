@@ -5,6 +5,10 @@ from src.Gender import Gender
 import pandas as pd
 from src.JSONHandler import JSONHandler
 
+# Links naar de club pagina's
+seniorUrl = "https://badmintonnederland.toernooi.nl/sport/clubs.aspx?id=39A69CCC-55A7-47C2-A19C-E41728508953"
+juniorUrl = "https://badmintonnederland.toernooi.nl/sport/clubs.aspx?id=FF2D14A0-938B-45DB-A51F-63DAEC8F3F63"
+
 st.title("Uitleg Competitie Planner")
 
 st.write("""
@@ -15,7 +19,9 @@ table = st.empty()
 def GetNumberOfTeams() -> int:
     teams = CP.GetClub().GetTeams()
     if not teams:
-        CP.RetrieveData()
+        CP.ResetClub()
+        CP.RetrieveData(seniorUrl)
+        CP.RetrieveData(juniorUrl)
         teams = CP.GetClub().GetTeams()
     if not teams:  # If still no teams after retrieval, we assume there are none
         st.warning("Er zijn momenteel geen teams beschikbaar. Probeer later opnieuw.")
@@ -45,7 +51,9 @@ refreshData = st.button("Ververs data", key="refreshData")
 if refreshData:
     table.empty()
     try:
-        CP.RetrieveData()
+        CP.ResetClub()
+        CP.RetrieveData(seniorUrl)
+        CP.RetrieveData(juniorUrl)
     except Exception as e:
         st.error(f"An unexpected error occurred: {e}")
     

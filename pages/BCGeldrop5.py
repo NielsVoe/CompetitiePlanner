@@ -3,10 +3,10 @@ from pages.src.teamPage import TeamPage
 import pages.src.mainPage as MainPage
 from src.FilterType import FilterType
 
-st.title("BC Geldrop 1")
+st.title("BC Geldrop 5")
 
 club = MainPage.GetClub()
-teamPage = TeamPage(club, "GELDROP BC 1")
+teamPage = TeamPage(club, "GELDROP BC 5")
 
 col1, col2, col3 = st.columns(3)
 allMatches = col1.button("Alle wedstrijden")
