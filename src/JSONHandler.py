@@ -1,6 +1,7 @@
 import json
 
 class JSONHandler:
+    @staticmethod
     def Export(data: list[dict], filename: str):
         """
         Export data to a JSON file.
@@ -12,6 +13,7 @@ class JSONHandler:
             json.dump(data, f, ensure_ascii=False, indent=4)
         print(f"Data exported to {filename} successfully.")
 
+    @staticmethod
     def Import(filename: str) -> list[dict]:
         """
         Import data from a JSON file.
@@ -24,6 +26,7 @@ class JSONHandler:
         print(f"Data imported from {filename} successfully.")
         return data
     
+    @staticmethod
     def IsEmpty(filename: str) -> bool:
         """
         Check if a JSON file is empty.
