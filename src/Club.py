@@ -15,6 +15,7 @@ class Club(Serialize):
         self.id = id
 
     def GetTeams(self) -> list[Team]:
+        print(f"Number of teams in club {self.name}: {len(self.teams)}")
         return self.teams
     
     def GetSingleTeam(self, teamName:str) -> Team:

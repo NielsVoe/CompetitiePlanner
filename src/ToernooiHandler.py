@@ -53,27 +53,30 @@ class ToernooiHandler:
             response = client.get(link)
             soup = BeautifulSoup(response.text, "html.parser")
             players = []
-            for table in soup.select(".teamplayerlists"):
-                for males in table.select(".maleplayers"):
-                    for tr in males.select("tr"):
-                        vastSpeler = "Nee"
-                        for td in tr.select("td"):
-                            if td.text == "Ja":
-                                vastSpeler = "Ja"
-                        for male in tr.select("#playercell"):
-                            name = Format.Name(male.select("a")[0].text)
-                            id = male.select("a")[0]["href"].split("?", 1)[-1]
-                            players.append({"Name": name, "ID": id, "VastSpeler": vastSpeler, "Gender": "Male"})
-                for females in table.select(".femaleplayers"):
-                    for tr in females.select("tr"):
-                        vastSpeler = "Nee"
-                        for td in tr.select("td"):
-                            if td.text == "Ja":
-                                vastSpeler = "Ja"
-                        for female in tr.select("#playercell"):
-                            name = Format.Name(female.select("a")[0].text)
-                            id = female.select("a")[0]["href"].split("?", 1)[-1]
-                            players.append({"Name": name, "ID": id, "VastSpeler": vastSpeler, "Gender": "Female"})
+            try:
+                for table in soup.select(".teamplayerlists"):
+                    for males in table.select(".maleplayers"):
+                        for tr in males.select("tr"):
+                            vastSpeler = "Nee"
+                            for td in tr.select("td"):
+                                if td.text == "Ja":
+                                    vastSpeler = "Ja"
+                            for male in tr.select("#playercell"):
+                                name = Format.Name(male.select("a")[0].text)
+                                id = male.select("a")[0]["href"].split("?", 1)[-1]
+                                players.append({"Name": name, "ID": id, "VastSpeler": vastSpeler, "Gender": "Male"})
+                    for females in table.select(".femaleplayers"):
+                        for tr in females.select("tr"):
+                            vastSpeler = "Nee"
+                            for td in tr.select("td"):
+                                if td.text == "Ja":
+                                    vastSpeler = "Ja"
+                            for female in tr.select("#playercell"):
+                                name = Format.Name(female.select("a")[0].text)
+                                id = female.select("a")[0]["href"].split("?", 1)[-1]
+                                players.append({"Name": name, "ID": id, "VastSpeler": vastSpeler, "Gender": "Female"})
+            except Exception as e:
+                print(f"Error while parsing players for team ID {teamID}: {e}")
             return players
         
     def GetMatches(self, teamID:str) -> list:
@@ -87,17 +90,21 @@ class ToernooiHandler:
             response = client.get(link)
             soup = BeautifulSoup(response.text, "html.parser")
             matches = []
-            for div in soup.select(".teammatch-table"):
-                for table in div.select("tbody"):
-                    for tr in table.select("tr"):
-                        td = tr.find_all("td")
-                        parts = td[1].text.split(" ")
-                        date = Date(day=parts[0], date=parts[1], time=parts[2])
-                        match = {
-                            "Date": date,
-                            "Home": td[6].text,
-                            "Away": td[8].text,
-                            "Result": td[9].text,
-                        }
-                        matches.append(match)
+            try:
+                for div in soup.select(".teammatch-table"):
+                    for table in div.select("tbody"):
+                        for tr in table.select("tr"):
+                            td = tr.find_all("td")
+                            parts = td[1].text.split(" ")
+                            if len(parts) == 3:
+                                date = Date(day=parts[0], date=parts[1], time=parts[2])
+                                match = {
+                                    "Date": date,
+                                    "Home": td[6].text,
+                                    "Away": td[8].text,
+                                    "Result": td[9].text,
+                                }
+                                matches.append(match)
+            except Exception as e:
+                print(f"Error while parsing matches for team ID {teamID}: {e}")
             return matches
