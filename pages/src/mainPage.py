@@ -52,6 +52,7 @@ if refreshData:
     table.empty()
     try:
         CP.ResetClub()
+        print("Club data reset.")
         CP.RetrieveData(seniorUrl)
         CP.RetrieveData(juniorUrl)
     except Exception as e:
