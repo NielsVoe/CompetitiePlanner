@@ -30,7 +30,7 @@ class JSONHandler:
             raise FileNotFoundError(f"The file {filename} does not exist.")
         with open(os.path.join(directory, filename), 'r', encoding='utf-8') as f:
             data = json.load(f)
-        print(f"Data imported from {filename} successfully.")
+        print(f"Data imported from {os.path.join(directory, filename)} successfully.")
         return data
     
     @staticmethod
