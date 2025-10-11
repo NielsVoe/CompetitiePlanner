@@ -16,7 +16,7 @@ pip install -r ".\requirements.txt"
 ## Release Notes
 
 ### v1.1.0
-- JSONHandler accpets a file name and directory in different parameter.
+- JSONHandler accepts a file name and directory in different parameter.
 - JSONHandler checks if directory exists before creating/reading file.
 
 ### v1.0.1
