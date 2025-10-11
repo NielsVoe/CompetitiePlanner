@@ -1,6 +1,18 @@
 # CompetitiePlanner
 Competitie planner voor badminton
 
+## App usage
+The app uses [Strealit](https://streamlit.io/) to run a web application. The app can be run locally and in a cloud environment. To run locally use the following commands:
+```bash
+streamlit run .\main.py
+```
+
+## Requirements
+To use the environment, the `requirements.txt` file can be used to install the dependencies needed. Install the requirements using pip:
+```bash
+pip install -r ".\requirements.txt"
+```
+
 ## Release Notes
 
 ### v1.0.1
