@@ -24,6 +24,8 @@ class JSONHandler:
         :param filename: The name of the file to read the JSON data from.
         :return: List of dictionaries containing the imported data.
         """
+        if not os.path.isfile(filename):
+            raise FileNotFoundError(f"The file {filename} does not exist.")
         with open(filename, 'r', encoding='utf-8') as f:
             data = json.load(f)
         print(f"Data imported from {filename} successfully.")
