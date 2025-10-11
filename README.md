@@ -2,7 +2,7 @@
 Competitie planner voor badminton
 
 ## App usage
-The app uses [Strealit](https://streamlit.io/) to run a web application. The app can be run locally and in a cloud environment. To run locally use the following commands:
+The app uses [Streamlit](https://streamlit.io/) to run a web application. The app can be run locally and in a cloud environment. To run locally use the following commands:
 ```bash
 streamlit run .\main.py
 ```
@@ -14,6 +14,10 @@ pip install -r ".\requirements.txt"
 ```
 
 ## Release Notes
+
+### v1.1.0
+- JSONHandler accepts a file name and directory in separate parameters.
+- JSONHandler checks if directory exists before creating/reading file.
 
 ### v1.0.1
 - Add some debugging info
