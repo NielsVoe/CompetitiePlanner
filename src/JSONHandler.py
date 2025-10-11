@@ -1,17 +1,20 @@
 import json
+import os
 
 class JSONHandler:
     @staticmethod
-    def Export(data: list[dict], filename: str):
+    def Export(data: list[dict], directory: str, filename: str) -> None:
         """
         Export data to a JSON file.
         
         :param data: List of dictionaries containing the data to export.
         :param filename: The name of the file to save the JSON data to.
         """
-        with open(filename, 'w', encoding='utf-8') as f:
+        if not os.path.isdir(directory):
+            os.makedirs(directory)
+        with open(os.path.join(directory, filename), 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=4)
-        print(f"Data exported to {filename} successfully.")
+        print(f"Data exported to {os.path.join(directory, filename)} successfully.")
 
     @staticmethod
     def Import(filename: str) -> list[dict]:

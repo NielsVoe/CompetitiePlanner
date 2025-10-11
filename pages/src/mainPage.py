@@ -65,4 +65,4 @@ if refreshData:
 
     table.table(df)
 
-    JSONHandler.Export(CP.GetClub().ToDict(), "data/club.json")
+    JSONHandler.Export(CP.GetClub().ToDict(), "data", "club.json")
