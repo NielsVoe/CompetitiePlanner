@@ -42,7 +42,7 @@ if CP.GetClub().GetTeams():
 # Check if club data json file is not empty
 if not JSONHandler.IsEmpty("data/club.json"):
     try:
-        CP.GetClub().FromDict(JSONHandler.Import("data/club.json"))
+        CP.GetClub().FromDict(JSONHandler.Import("data", "club.json"))
     except Exception as e:
         st.error(f"Fout bij het laden van clubgegevens: {e}")
 
