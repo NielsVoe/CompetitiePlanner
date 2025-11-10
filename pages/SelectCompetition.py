@@ -5,7 +5,7 @@ import bcrypt
 import time
 
 st.title("Select competition")
-st.write("This is a test page for selecting competitions. Please login first!")
+st.write("This is the configuration page for selecting competitions. Please login to continue.")
 
 toernooiHandler = TH.ToernooiHandler()
 tournaments = toernooiHandler.GetTournaments()

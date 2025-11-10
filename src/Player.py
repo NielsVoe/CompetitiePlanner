@@ -8,13 +8,14 @@ class Player(Serialize):
         self.gender = gender
 
     def __eq__(self, value):
-        if isinstance(value, Player):
-            if self.player_id is not value.player_id:
-                return False
-            if self.gender is not value.gender:
-                return False
-            if self.name is not value.name:
-                return False
+        if not isinstance(value, Player):
+            return NotImplemented
+        if self.player_id is not value.player_id:
+            return False
+        if self.gender is not value.gender:
+            return False
+        if self.name is not value.name:
+            return False
         return True
 
     def GetGender(self) -> Gender:
