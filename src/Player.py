@@ -7,6 +7,16 @@ class Player(Serialize):
         self.player_id = player_id
         self.gender = gender
 
+    def __eq__(self, value):
+        if isinstance(value, Player):
+            if self.player_id is not value.player_id:
+                return False
+            if self.gender is not value.gender:
+                return False
+            if self.name is not value.name:
+                return False
+        return True
+
     def GetGender(self) -> Gender:
         return self.gender
     def GetName(self) -> str:

@@ -20,9 +20,7 @@ class Team(Serialize):
         Returns True if all players were added, False if some were already present.'''
         allPlayersAdded = True
         for player in players:
-            if player.name not in [p.name for p in self.players]:
-                self.players.append(player)
-            else:
+            if not self.AddPlayer(player):
                 allPlayersAdded = False
         return allPlayersAdded
 
@@ -37,9 +35,7 @@ class Team(Serialize):
         Returns True if all matches were added, False if some were already present.'''
         allMatchesAdded = True
         for match in matches:
-            if match.date not in [m.date for m in self.matches]:
-                self.matches.append(match)
-            else:
+            if not self.AddMatch(match):
                 allMatchesAdded = False
         # Make sure matches are sorted by date
         self.matches.sort(key=lambda m: m.date.date)
