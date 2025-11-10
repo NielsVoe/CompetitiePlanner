@@ -21,8 +21,8 @@ class ToernooiHandler:
                 for row in table.select("tr"):
                     for td in row.select("td"):
                         for a in td.select("a"):
-                            adress = a["href"]
-                            m = re.search(r'id=([^&]+)', adress)
+                            address = a["href"]
+                            m = re.search(r'id=([^&]+)', address)
                             if m:
                                 id = m.group(1)
                             competition = a.text
