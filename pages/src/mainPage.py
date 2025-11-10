@@ -18,7 +18,6 @@ teamTable = st.empty()
 
 def GetCompetitionIDs() -> list[str]:
     competitions = JSONHandler.Import("data", "selected_competitions.json")
-    print(f"Loaded {len(competitions)} competitions from JSON.")
     competitionIDs = [comp["Link"] for comp in competitions]
     return competitionIDs
 
@@ -56,10 +55,8 @@ if refreshData:
     teamTable.empty()
     try:
         CP.ResetClub()
-        print("Club data reset.")
         competitionIDs = GetCompetitionIDs()
         for competitionID in competitionIDs:
-            print(f"Fetching data for competition ID: {competitionID}")
             CP.RetrieveData(f"{BASE_URL}{competitionID}")
     except Exception as e:
         st.error(f"An unexpected error occurred: {e}")

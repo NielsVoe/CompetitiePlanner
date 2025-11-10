@@ -16,10 +16,6 @@ if not st.session_state.get("authenticated"):
             with open("data/password.txt", "rb") as f:
                 stored_hash = f.read().strip()
 
-            print(f"Entered password: {pwd}")
-            print(f"Stored hash: {stored_hash}")
-            print(f"Password bytes: {pwd.encode('utf-8')}")
-
             if bcrypt.checkpw(pwd.encode("utf-8"), stored_hash):
                 st.session_state.authenticated = True
                 st.success("Authenticated successfully.")
