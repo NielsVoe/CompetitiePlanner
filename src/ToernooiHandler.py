@@ -12,22 +12,19 @@ class ToernooiHandler:
         self.url = url
 
     def GetTournaments(self) -> list:
-        # Get the tournaments from the 2025/2026 season
+        # Get the tournaments based on the 2025/2026 season, it contains all previous and future competitions
         tournaments = []
         with Client(headers=HEADERS) as client:
             response = client.get(f"https://badmintonnederland.toernooi.nl/sport/league?id={BASE_SEASON}")
             soup = BeautifulSoup(response.text, "html.parser")
-            for table in soup.select(".tabbedtournamentlist"):
-                for row in table.select("tr"):
-                    for td in row.select("td"):
-                        for a in td.select("a"):
-                            address = a["href"]
-                            m = re.search(r'id=([^&]+)', address)
-                            if m:
-                                id = m.group(1)
-                            competition = a.text
-                            if "Bondscompetitie" in competition or "Jeugdcompetitie" in competition:
-                                tournaments.append({"Competition": competition, "Link": id})
+            for a in soup.select(".tabbedtournamentlist tr td a"):
+                address = a["href"]
+                m = re.search(r'id=([^&]+)', address)
+                if m:
+                    id = m.group(1)
+                    competition = a.text
+                    if "Bondscompetitie" in competition or "Jeugdcompetitie" in competition:
+                        tournaments.append({"Competition": competition, "Link": id})
         return tournaments
 
     def GetClubID(self, clubName:str) -> str:

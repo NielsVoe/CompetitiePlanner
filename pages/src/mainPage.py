@@ -17,12 +17,20 @@ competitionTable = st.empty()
 teamTable = st.empty()
 
 def GetCompetitionIDs() -> list[str]:
-    competitions = JSONHandler.Import("data", "selected_competitions.json")
+    try:
+        competitions = JSONHandler.Import("data", "selected_competitions.json")
+    except Exception as e:
+        st.error(f"Error loading competitions: {e}")
+        return []
     competitionIDs = [comp["Link"] for comp in competitions]
     return competitionIDs
 
 def GetCompetitionNames() -> list[str]:
-    competitions = JSONHandler.Import("data", "selected_competitions.json")
+    try:
+        competitions = JSONHandler.Import("data", "selected_competitions.json")
+    except Exception as e:
+        st.error(f"Error loading competitions: {e}")
+        return []
     competitionNames = [comp["Competition"] for comp in competitions]
     return competitionNames
 
