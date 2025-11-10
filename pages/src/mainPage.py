@@ -6,8 +6,7 @@ import pandas as pd
 from src.JSONHandler import JSONHandler
 
 # Links naar de club pagina's
-seniorUrl = "https://badmintonnederland.toernooi.nl/sport/clubs.aspx?id=39A69CCC-55A7-47C2-A19C-E41728508953"
-juniorUrl = "https://badmintonnederland.toernooi.nl/sport/clubs.aspx?id=FF2D14A0-938B-45DB-A51F-63DAEC8F3F63"
+BASE_URL = "https://badmintonnederland.toernooi.nl/sport/clubs.aspx?id="
 
 st.title("Uitleg Competitie Planner")
 
@@ -16,17 +15,11 @@ Welkom bij de Competitie Planner voor BC Geldrop!
 """)
 table = st.empty()
 
-def GetNumberOfTeams() -> int:
-    teams = CP.GetClub().GetTeams()
-    if not teams:
-        CP.ResetClub()
-        CP.RetrieveData(seniorUrl)
-        CP.RetrieveData(juniorUrl)
-        teams = CP.GetClub().GetTeams()
-    if not teams:  # If still no teams after retrieval, we assume there are none
-        st.warning("Er zijn momenteel geen teams beschikbaar. Probeer later opnieuw.")
-        return 0
-    return len(teams)
+def GetCompetitionIDs() -> list[str]:
+    competitions = JSONHandler.Import("data", "selected_competitions.json")
+    print(f"Loaded {len(competitions)} competitions from JSON.")
+    competitionIDs = [comp["Link"] for comp in competitions]
+    return competitionIDs
 
 def GetClub() -> Club:
     return CP.GetClub()
@@ -53,8 +46,10 @@ if refreshData:
     try:
         CP.ResetClub()
         print("Club data reset.")
-        CP.RetrieveData(seniorUrl)
-        CP.RetrieveData(juniorUrl)
+        competitionIDs = GetCompetitionIDs()
+        for competitionID in competitionIDs:
+            print(f"Fetching data for competition ID: {competitionID}")
+            CP.RetrieveData(f"{BASE_URL}{competitionID}")
     except Exception as e:
         st.error(f"An unexpected error occurred: {e}")
     
