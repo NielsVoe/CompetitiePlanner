@@ -9,11 +9,11 @@ class Player(Serialize):
 
     def __eq__(self, value):
         if isinstance(value, Player):
-            if self.player_id is not value.player_id:
+            if self.player_id != value.player_id:
                 return False
-            if self.gender is not value.gender:
+            if self.gender != value.gender:
                 return False
-            if self.name is not value.name:
+            if self.name != value.name:
                 return False
         return True
 
