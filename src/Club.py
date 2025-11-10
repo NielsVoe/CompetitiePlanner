@@ -27,6 +27,8 @@ class Club(Serialize):
     def AddTeam(self, team:Team) -> bool:
         if team in self.teams:
             return False
+        if team.name in [t.name for t in self.teams]:
+            raise ValueError(f"Team with name {team.name} already exists in club {self.name}.")
         self.teams.append(team)
         return True
     

@@ -1,25 +1,45 @@
 import streamlit as st
 from src import ToernooiHandler as TH
 from src.JSONHandler import JSONHandler
+import bcrypt
 
 st.title("Select competition")
-st.write("This is a test page for selecting competitions.")
+st.write("This is a test page for selecting competitions. Please login first!")
 
 toernooiHandler = TH.ToernooiHandler()
 tournaments = toernooiHandler.GetTournaments()
 
-st.write("Available competitions for the planner. Please select the ones you want to include:")
+if not st.session_state.get("authenticated"):
+    pwd = st.text_input("Password", type="password")
+    if st.button("Login"):
+        try:
+            with open("data/password.txt", "rb") as f:
+                stored_hash = f.read().strip()
 
-save = st.button("Save selected competitions")
+            print(f"Entered password: {pwd}")
+            print(f"Stored hash: {stored_hash}")
+            print(f"Password bytes: {pwd.encode('utf-8')}")
 
-for tournament in tournaments:
-    st.checkbox(tournament["Competition"], key=tournament["Link"])
+            if bcrypt.checkpw(pwd.encode("utf-8"), stored_hash):
+                st.session_state.authenticated = True
+                st.success("Authenticated successfully.")
+            else:
+                st.error("Incorrect password.")
+        except FileNotFoundError:
+            st.error("Password file not found.")
+else:
+    st.write("Available competitions for the planner. Please select the ones you want to include:")
 
-selectedCompetitions = []
-for tournament in tournaments:
-    if st.session_state.get(tournament["Link"], False):
-        selectedCompetitions.append(tournament)
+    save = st.button("Save selected competitions")
 
-if save:
-    JSONHandler.Export(selectedCompetitions, "data", "selected_competitions.json")
-    st.success("Selected competitions saved successfully.")
+    for tournament in tournaments:
+        st.checkbox(tournament["Competition"], key=tournament["Link"])
+
+    selectedCompetitions = []
+    for tournament in tournaments:
+        if st.session_state.get(tournament["Link"], False):
+            selectedCompetitions.append(tournament)
+
+    if save:
+        JSONHandler.Export(selectedCompetitions, "data", "selected_competitions.json")
+        st.success("Selected competitions saved successfully.")

@@ -39,7 +39,13 @@ def RetrieveData(url):
             if not team.AddMatch(match):
                 print(f"Match {match} already exists in team {team.name}")
         print(f"Adding team {team.name} with {len(team.players)} players and {len(team.matches)} matches.")
-        club.AddTeam(team)
+        try:
+            club.AddTeam(team)
+        except ValueError as ve:
+            existingTeam = club.GetSingleTeam(team.name)
+            print(existingTeam)
+            existingTeam.AddPlayers(team.GetPlayers())
+            existingTeam.AddMatches(team.GetMatches())
 
 def GetClub():
     return club

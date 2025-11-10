@@ -13,13 +13,24 @@ st.title("Uitleg Competitie Planner")
 st.write("""
 Welkom bij de Competitie Planner voor BC Geldrop!
 """)
-table = st.empty()
+competitionTable = st.empty()
+teamTable = st.empty()
 
 def GetCompetitionIDs() -> list[str]:
     competitions = JSONHandler.Import("data", "selected_competitions.json")
     print(f"Loaded {len(competitions)} competitions from JSON.")
     competitionIDs = [comp["Link"] for comp in competitions]
     return competitionIDs
+
+def GetCompetitionNames() -> list[str]:
+    competitions = JSONHandler.Import("data", "selected_competitions.json")
+    competitionNames = [comp["Competition"] for comp in competitions]
+    return competitionNames
+
+competitionFrame = pd.DataFrame({
+    "Geselecteerde competities": GetCompetitionNames()
+})
+competitionTable.table(competitionFrame)
 
 def GetClub() -> Club:
     return CP.GetClub()
@@ -30,7 +41,7 @@ if CP.GetClub().GetTeams():
         "Team": [team.name for team in CP.GetClub().GetTeams()],
         "Aantal spelers": [len(team.players) for team in CP.GetClub().GetTeams()]
     })
-    table.table(df)
+    teamTable.table(df)
 
 # Check if club data json file is not empty
 if not JSONHandler.IsEmpty("data/club.json"):
@@ -42,7 +53,7 @@ if not JSONHandler.IsEmpty("data/club.json"):
 refreshData = st.button("Ververs data", key="refreshData")
 
 if refreshData:
-    table.empty()
+    teamTable.empty()
     try:
         CP.ResetClub()
         print("Club data reset.")
@@ -58,6 +69,6 @@ if refreshData:
         "Aantal spelers": [len(team.players) for team in CP.GetClub().GetTeams()]
     })
 
-    table.table(df)
+    teamTable.table(df)
 
     JSONHandler.Export(CP.GetClub().ToDict(), "data", "club.json")
