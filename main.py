@@ -24,6 +24,8 @@ teamJ4 = st.Page("pages/BCGeldropJ4.py", title="BC Geldrop J4")
 teamJ5 = st.Page("pages/BCGeldropJ5.py", title="BC Geldrop J5")
 teamJ6 = st.Page("pages/BCGeldropJ6.py", title="BC Geldrop J6")
 
-pg = st.navigation([homePage, planningPage, team1, team2, team3, team4, team5, team6, team7, team8, teamM1, teamJ1, teamJ2, teamJ3, teamJ4, teamJ5, teamJ6])
+testPage = st.Page("pages/SelectCompetition.py", title="Test Page")
+
+pg = st.navigation([homePage, planningPage, team1, team2, team3, team4, team5, team6, team7, team8, teamM1, teamJ1, teamJ2, teamJ3, teamJ4, teamJ5, teamJ6, testPage])
 
 pg.run()

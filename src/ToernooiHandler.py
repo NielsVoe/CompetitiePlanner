@@ -4,15 +4,34 @@ from src.Format import Format
 from src.Date import Date
 
 HEADERS = {"Cookie": "_ga=GA1.1.1888592977.1711484788; BCSessionID=266b900f-096a-4eb5-87b3-0af16b3db006; _ga_4BZBWY18RJ=GS1.1.1711484788.1.1.1711485972.0.0.0; lvt=vJK7Ne8BzsVEGOZLKjAvV95Eph2N8YkVcFYVST9yqklfBM357xCtt1jMBMT2j0RZUH0wDeZdsoM=; st=l=1043&exp=46070.9212847685&c=1&cp=31&s=2; .ASPX_TOURNAMENT_WEBSITE=5FAEFEB99D5E427343F0BB7C77EA92C25E0A87BAD57643FBE4978656DBF9AE0CE40329915240D1D323F5460597D08D244CE9C9578F8043214EF9960698E1237E399B44AFFE5D22829856CA2263AC3EFB1826761B; ASP.NET_SessionId=fwo3ddc2hymtyzlnanoyojtw"}
+BASE_SEASON = "39a69ccc-55a7-47c2-a19c-e41728508953"  # Bondscompetitie 2025-2026
 
 class ToernooiHandler:
-    def __init__(self, url:str):
+    def __init__(self, url:str=None):
         self.url = url
+
+    def GetTournaments(self) -> list:
+        # Get the tournaments from the 2025/2026 season
+        tournaments = []
+        with Client(headers=HEADERS) as client:
+            response = client.get(f"https://badmintonnederland.toernooi.nl/sport/league?id={BASE_SEASON}")
+            soup = BeautifulSoup(response.text, "html.parser")
+            for table in soup.select(".tabbedtournamentlist"):
+                for row in table.select("tr"):
+                    for td in row.select("td"):
+                        for a in td.select("a"):
+                            adress = a["href"]
+                            competition = a.text
+                            if "Bondscompetitie" in competition or "Jeugdcompetitie" in competition:
+                                tournaments.append({"Competition": competition, "Link": adress})
+        return tournaments
 
     def GetClubID(self, clubName:str) -> str:
         # Get the link to the club page from the club name
         # The club name is the name of the club in the url
         # The url is the link to the club page
+        if self.url is None:
+            raise ValueError("URL is not set for ToernooiHandler.")
         with Client(headers=HEADERS) as client:
             response = client.get(self.url)
             soup = BeautifulSoup(response.text, "html.parser")
