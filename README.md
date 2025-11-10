@@ -15,6 +15,13 @@ pip install -r ".\requirements.txt"
 
 ## Release Notes
 
+### v1.2.0
+- Competition selection page added. Makes it possible to select different competitions.
+- Dynamically load the competitions based on the selected competitions.
+- Display selected competitions.
+- When there are duplicated teams, combine them instead of creating a new object.
+- Add functions to add multiple teams/players instead of only one.
+
 ### v1.1.1
 - Fix JSONHandler import references to also call directory.
 
