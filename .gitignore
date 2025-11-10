@@ -50,4 +50,4 @@ coverage.xml
 docs/_build/
 
 # Local data file
-data/*.json
+data/*
