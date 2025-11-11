@@ -50,3 +50,4 @@ else:
     if time.time() > st.session_state.auth_expiry:
         st.session_state.authenticated = False
         st.warning("Session expired.")
+        st.rerun()
