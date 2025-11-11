@@ -26,6 +26,7 @@ if not st.session_state.get("authenticated"):
                 st.session_state.authenticated = True
                 st.success("Authenticated successfully.")
                 st.session_state.auth_expiry = time.time() + 300  # 5 minutes expiry
+                st.rerun()
             else:
                 st.error("Incorrect password.")
         except FileNotFoundError:
