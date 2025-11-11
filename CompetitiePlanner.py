@@ -39,6 +39,8 @@ def RetrieveData(url):
             club.AddTeam(team)
         except ValueError as ve:
             existingTeam = club.GetSingleTeam(team.name)
+            if existingTeam is None:
+                raise ValueError(f"Team {team.name} not found in club")
             existingTeam.AddPlayers(team.GetPlayers())
             existingTeam.AddMatches(team.GetMatches())
 
