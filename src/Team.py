@@ -15,11 +15,31 @@ class Team(Serialize):
         self.players.append(player)
         return True
     
+    def AddPlayers(self, players: list[Player]) -> bool:
+        '''Add multiple players to the team.
+        Returns True if all players were added, False if some were already present.'''
+        allPlayersAdded = True
+        for player in players:
+            if not self.AddPlayer(player):
+                allPlayersAdded = False
+        return allPlayersAdded
+
     def AddMatch(self, match: Teammatch) -> bool:
         if match in self.matches:
             return False
         self.matches.append(match)
         return True
+    
+    def AddMatches(self, matches: list[Teammatch]) -> bool:
+        '''Add multiple matches to the team.
+        Returns True if all matches were added, False if some were already present.'''
+        allMatchesAdded = True
+        for match in matches:
+            if not self.AddMatch(match):
+                allMatchesAdded = False
+        # Make sure matches are sorted by date
+        self.matches.sort(key=lambda m: m.date.date)
+        return allMatchesAdded
     
     def GetMatches(self) -> list[Teammatch]:
         return self.matches

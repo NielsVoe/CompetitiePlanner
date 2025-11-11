@@ -15,11 +15,9 @@ def RetrieveData(url):
     clubID = competitie.GetClubID("GELDROP BC").split("?", 1)[-1]
     club.SetClubID(clubID)
     teams = competitie.GetTeams(clubID)
-    print(f"Retrieved {len(teams)} teams for club {club.name}.")
     for t in teams:
         teamID = t["ID"]
         team = Team(t["Team"], teamID)
-        print(f"Processing team {team.name} with ID {teamID}.")
         for p in competitie.GetPlayers(teamID):
             playerID = p["ID"]
             vastSpeler = p["VastSpeler"]
@@ -28,8 +26,7 @@ def RetrieveData(url):
             player = Player(playerName, playerID, gender)
             if vastSpeler:
                 if not team.AddPlayer(player):
-                    print(f"Player {player} already exists in team {team.name}")
-        print(f"Added {len(team.players)} players to team {team.name}.")
+                    raise ValueError(f"Player with name {player.name} already exists in team {team.name}.")
         for m in competitie.GetMatches(teamID):
             matchDate = m["Date"]
             home = m["Home"]
@@ -37,9 +34,15 @@ def RetrieveData(url):
             result = m["Result"]
             match = Teammatch(home, away, result, result, matchDate)
             if not team.AddMatch(match):
-                print(f"Match {match} already exists in team {team.name}")
-        print(f"Adding team {team.name} with {len(team.players)} players and {len(team.matches)} matches.")
-        club.AddTeam(team)
+                raise ValueError(f"Match {match} already exists in team {team.name}.")
+        try:
+            club.AddTeam(team)
+        except ValueError as ve:
+            existingTeam = club.GetSingleTeam(team.name)
+            if existingTeam is None:
+                raise ValueError(f"Team {team.name} not found in club")
+            existingTeam.AddPlayers(team.GetPlayers())
+            existingTeam.AddMatches(team.GetMatches())
 
 def GetClub():
     return club
