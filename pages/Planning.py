@@ -81,7 +81,7 @@ def ShowMatchesForTeams(teammatches: list[Teammatch]) -> None:
             st.write(f"{match.GetDay()} om {match.GetTime()}: {match.GetHomeTeam()} vs {match.GetAwayTeam()} - Score: {match.GetScore()[0]}:{match.GetScore()[1]}")
 
 if planningButton:
-    selectedTeams:list[Team] = []
+    selectedTeams: list[Team] = []
 
     for team in selectedOptions:
         selectedTeams.append(club.GetSingleTeam(team.replace("BC Geldrop ", "GELDROP BC ")))
