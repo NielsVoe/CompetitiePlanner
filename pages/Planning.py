@@ -80,7 +80,8 @@ def ShowMatchesForTeams(teammatches: list[Teammatch]) -> None:
                 initialDate = match.GetDate()
                 st.subheader(f"Wedstrijden op {initialDate.strftime('%d-%m-%Y')}")
             st.write(f"{match.GetDay()} om {match.GetTime()}: {match.GetHomeTeam()} vs {match.GetAwayTeam()} - Score: {match.GetScore()[0]}:{match.GetScore()[1]}")
-
+    else:
+        st.info("Geen wedstrijden gevonden voor de geselecteerde criteria.")
 def GetSelectedTeams(selectedOptions: list[str], club: Club) -> list[Team]:
     selectedTeams: list[Team] = []
     for team in selectedOptions:
@@ -100,9 +101,14 @@ if planningButton:
 
 if comingWeekendButton:
     today = datetime.date.today()
-    saturday = today + datetime.timedelta((5 - today.weekday()) % 7)
-    sunday = saturday + datetime.timedelta(1)
-
+    # Fix: If today is Saturday or Sunday, show the current weekend; otherwise, show the upcoming weekend
+    if today.weekday() == 5:  # Saturday
+        saturday = today
+    elif today.weekday() == 6:  # Sunday
+        saturday = today - datetime.timedelta(days=1)
+    else:
+        saturday = today + datetime.timedelta((5 - today.weekday()) % 7)
+    sunday = saturday + datetime.timedelta(days=1)
     selectedTeams: list[Team] = GetSelectedTeams(selectedOptions, club)
 
     teammatches:list[Teammatch] = GetTeamMatchesInDateRange(selectedTeams, saturday, sunday, filterChoice)
