@@ -57,7 +57,7 @@ datepicker = st.date_input("Selecteer een datum",
                             help="Selecteer een datum tussen 1 september 2025 en 30 juni 2026", 
                             key="datePicker")
 
-def GetTeamMatchesInDateRange(teams:list[Team], startDate:datetime.date, endDate:datetime.date, choice:str) -> list[Teammatch]:
+def GetTeamMatchesInDateRange(teams: list[Team], startDate: datetime.date, endDate: datetime.date, choice: str) -> list[Teammatch]:
     teammatches:list[Teammatch] = []
     for team in teams:
         for match in team.GetMatches():
