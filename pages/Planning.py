@@ -8,29 +8,34 @@ from src.Teammatch import Teammatch
 st.title("Planning")
 club = MainPage.GetClub()
 
-youth, senior1, senior2 = st.columns(3)
+youthTeams = ["BC Geldrop J1", "BC Geldrop J2", "BC Geldrop J3", "BC Geldrop J4", "BC Geldrop J5", "BC Geldrop J6"]
+seniorTeams = ["BC Geldrop 1", "BC Geldrop 2", "BC Geldrop 3", "BC Geldrop 4", "BC Geldrop 5",
+               "BC Geldrop 6", "BC Geldrop 7", "BC Geldrop 8", "BC Geldrop M1"]
 
-with youth:
-    st.subheader("Jeugd")
-    BCGeldropJ1 = st.checkbox("BC Geldrop J1", value=False)
-    BCGeldropJ2 = st.checkbox("BC Geldrop J2", value=False)
-    BCGeldropJ3 = st.checkbox("BC Geldrop J3", value=False)
-    BCGeldropJ4 = st.checkbox("BC Geldrop J4", value=False)
-    BCGeldropJ5 = st.checkbox("BC Geldrop J5", value=False)
-    BCGeldropJ6 = st.checkbox("BC Geldrop J6", value=False)
-with senior1:
-    st.subheader("Senioren")
-    BCGeldrop1 = st.checkbox("BC Geldrop 1", value=False)
-    BCGeldrop2 = st.checkbox("BC Geldrop 2", value=False)
-    BCGeldrop3 = st.checkbox("BC Geldrop 3", value=False)
-    BCGeldrop4 = st.checkbox("BC Geldrop 4", value=False)
-    BCGeldrop5 = st.checkbox("BC Geldrop 5", value=False)
-with senior2:
-    st.subheader("Senioren")
-    BCGeldrop6 = st.checkbox("BC Geldrop 6", value=False)
-    BCGeldrop7 = st.checkbox("BC Geldrop 7", value=False)
-    BCGeldrop8 = st.checkbox("BC Geldrop 8", value=False)
-    BCGeldropM1 = st.checkbox("BC Geldrop M1", value=False)
+teamSelectionCol1, teamSelectionCol2 = st.columns(2)
+
+with teamSelectionCol1:
+    allTeamsBtn = st.button("Selecteer alle teams", key="selectAllTeams")
+    noTeamsBtn = st.button("Deselecteer alle teams", key="deselectAllTeams")
+with teamSelectionCol2:
+    youthTeamsBtn = st.button("Selecteer jeugd teams", key="selectYouthTeams")
+    seniorTeamsBtn = st.button("Selecteer senioren teams", key="selectSeniorTeams")
+
+if 'defaultTeams' not in st.session_state:
+    st.session_state.defaultTeams = []
+
+if allTeamsBtn:
+    st.session_state.defaultTeams = youthTeams + seniorTeams
+elif noTeamsBtn:
+    st.session_state.defaultTeams = []
+elif youthTeamsBtn:
+    st.session_state.defaultTeams = youthTeams
+elif seniorTeamsBtn:
+    st.session_state.defaultTeams = seniorTeams
+
+selectedOptions = st.multiselect("Selecteer teams om te tonen in de planning:", 
+                                   options=youthTeams + seniorTeams,
+                                   default=st.session_state.defaultTeams)
 
 filterChoice = st.radio("Filter wedstrijden op:",
                         options=["Alle wedstrijden", "Thuiswedstrijden", "Uitwedstrijden"],
@@ -50,38 +55,12 @@ datepicker = st.date_input("Selecteer een datum",
 
 if planningButton:
     selectedTeams:list[Team] = []
-    
-    if BCGeldropJ1:
-        selectedTeams.append(club.GetSingleTeam("GELDROP BC J1"))
-    if BCGeldropJ2:
-        selectedTeams.append(club.GetSingleTeam("GELDROP BC J2"))
-    if BCGeldropJ3:
-        selectedTeams.append(club.GetSingleTeam("GELDROP BC J3"))
-    if BCGeldropJ4:
-        selectedTeams.append(club.GetSingleTeam("GELDROP BC J4"))
-    if BCGeldropJ5:
-        selectedTeams.append(club.GetSingleTeam("GELDROP BC J5"))
-    if BCGeldropJ6:
-        selectedTeams.append(club.GetSingleTeam("GELDROP BC J6"))
 
-    if BCGeldrop1:
-        selectedTeams.append(club.GetSingleTeam("GELDROP BC 1"))
-    if BCGeldrop2:
-        selectedTeams.append(club.GetSingleTeam("GELDROP BC 2"))
-    if BCGeldrop3:
-        selectedTeams.append(club.GetSingleTeam("GELDROP BC 3"))
-    if BCGeldrop4:
-        selectedTeams.append(club.GetSingleTeam("GELDROP BC 4"))
-    if BCGeldrop5:
-        selectedTeams.append(club.GetSingleTeam("GELDROP BC 5"))
-    if BCGeldrop6:
-        selectedTeams.append(club.GetSingleTeam("GELDROP BC 6"))
-    if BCGeldrop7:
-        selectedTeams.append(club.GetSingleTeam("GELDROP BC 7"))
-    if BCGeldrop8:
-        selectedTeams.append(club.GetSingleTeam("GELDROP BC 8"))
-    if BCGeldropM1:
-        selectedTeams.append(club.GetSingleTeam("GELDROP BC M1"))
+    for team in selectedOptions:
+        selectedTeams.append(club.GetSingleTeam(team.replace("BC Geldrop ", "GELDROP BC ")))
+    
+    if None in selectedTeams:
+        st.rerun()
 
     teammatches:list[Teammatch] = []
     for team in selectedTeams:
@@ -103,7 +82,3 @@ if planningButton:
                 initialDate = match.GetDate()
                 st.subheader(f"Wedstrijden op {initialDate.strftime('%d-%m-%Y')}")
             st.write(f"{match.GetDay()} om {match.GetTime()}: {match.GetHomeTeam()} vs {match.GetAwayTeam()} - Score: {match.GetScore()[0]}:{match.GetScore()[1]}")
-
-    
-    
-    # Here you would typically call a function to display the matches for the selected teams
