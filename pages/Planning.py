@@ -98,9 +98,14 @@ if planningButton:
 
 if comingWeekendButton:
     today = datetime.date.today()
-    saturday = today + datetime.timedelta((5 - today.weekday()) % 7)
-    sunday = saturday + datetime.timedelta(1)
-
+    # Fix: If today is Saturday or Sunday, show the current weekend; otherwise, show the upcoming weekend
+    if today.weekday() == 5:  # Saturday
+        saturday = today
+    elif today.weekday() == 6:  # Sunday
+        saturday = today - datetime.timedelta(days=1)
+    else:
+        saturday = today + datetime.timedelta((5 - today.weekday()) % 7)
+    sunday = saturday + datetime.timedelta(days=1)
     selectedTeams: list[Team] = GetSelectedTeams(selectedOptions, club)
 
     teammatches:list[Teammatch] = GetTeamMatchesInDateRange(selectedTeams, saturday, sunday, filterChoice)
