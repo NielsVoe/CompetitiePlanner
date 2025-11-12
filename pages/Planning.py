@@ -86,7 +86,9 @@ def GetSelectedTeams(selectedOptions: list[str], club: Club) -> list[Team]:
     for team in selectedOptions:
         selectedTeams.append(club.GetSingleTeam(team.replace("BC Geldrop ", "GELDROP BC ")))
     if None in selectedTeams:
-        st.rerun()
+        missing_teams = [team for team, obj in zip(selectedOptions, selectedTeams) if obj is None]
+        st.error(f"Kon de volgende teams niet vinden: {', '.join(missing_teams)}")
+        st.stop()
     return selectedTeams
 
 if planningButton:
