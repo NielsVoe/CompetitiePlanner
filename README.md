@@ -15,6 +15,11 @@ pip install -r ".\requirements.txt"
 
 ## Release Notes
 
+### v1.3.0
+- Fix issue [#3](https://github.com/NielsVoe/CompetitiePlanner/issues/3)
+- Improved usability of planning page with possibility of easy selection of teams.
+- Add 'Toon komend weekend' button to quickly show the coming weekend.
+
 ### v1.2.0
 - Competition selection page added. Makes it possible to select different competitions.
 - Dynamically load the competitions based on the selected competitions.
