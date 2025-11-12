@@ -70,7 +70,7 @@ def GetTeamMatchesInDateRange(teams:list[Team], startDate:datetime.date, endDate
                     teammatches.append(match)
     return teammatches
 
-def ShowMatchesForTeams(teammatches:list[Teammatch]) -> None:
+def ShowMatchesForTeams(teammatches: list[Teammatch]) -> None:
     if teammatches:
         sortedMatches = sorted(teammatches, key=lambda m: (m.GetDate(), m.GetTime()))
         initialDate = None
