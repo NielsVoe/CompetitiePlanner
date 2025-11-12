@@ -42,7 +42,11 @@ filterChoice = st.radio("Filter wedstrijden op:",
                         index=0,
                         horizontal=True)
 
-planningButton = st.button("Bekijk wedstrijden", key="planningButton")
+showCol1, showCol2 = st.columns(2)
+with showCol1:
+    planningButton = st.button("Bekijk wedstrijden", key="planningButton")
+with showCol2:
+    comingWeekendButton = st.button("Toon komend weekend", key="comingWeekendButton")
 
 startDate = datetime.date(2025, 9, 1) # Startdatum 1 september 2025
 endDate = datetime.date(2026, 6, 30) # Einddatum 30 juni 2026
@@ -53,6 +57,29 @@ datepicker = st.date_input("Selecteer een datum",
                             help="Selecteer een datum tussen 1 september 2025 en 30 juni 2026", 
                             key="datePicker")
 
+def GetTeamMatchesInDateRange(teams:list[Team], startDate:datetime.date, endDate:datetime.date, choice:str) -> list[Teammatch]:
+    teammatches:list[Teammatch] = []
+    for team in teams:
+        for match in team.GetMatches():
+            if startDate <= match.GetDate() <= endDate:
+                if choice == "Alle wedstrijden":
+                    teammatches.append(match)
+                elif choice == "Thuiswedstrijden" and match.GetHomeTeam() == team.name:
+                    teammatches.append(match)
+                elif choice == "Uitwedstrijden" and match.GetAwayTeam() == team.name:
+                    teammatches.append(match)
+    return teammatches
+
+def ShowMatchesForTeams(teammatches:list[Teammatch]) -> None:
+    if teammatches:
+        sortedMatches = sorted(teammatches, key=lambda m: (m.GetDate(), m.GetTime()))
+        initialDate = None
+        for match in sortedMatches:
+            if initialDate is None or match.GetDate() != initialDate:
+                initialDate = match.GetDate()
+                st.subheader(f"Wedstrijden op {initialDate.strftime('%d-%m-%Y')}")
+            st.write(f"{match.GetDay()} om {match.GetTime()}: {match.GetHomeTeam()} vs {match.GetAwayTeam()} - Score: {match.GetScore()[0]}:{match.GetScore()[1]}")
+
 if planningButton:
     selectedTeams:list[Team] = []
 
@@ -62,23 +89,23 @@ if planningButton:
     if None in selectedTeams:
         st.rerun()
 
-    teammatches:list[Teammatch] = []
-    for team in selectedTeams:
-        for match in team.GetMatches():
-            if datepicker[0] <= match.GetDate() <= datepicker[1]:
-                if filterChoice == "Alle wedstrijden":
-                    teammatches.append(match) 
-                elif filterChoice == "Thuiswedstrijden" and match.GetHomeTeam() == team.name:
-                    teammatches.append(match)
-                elif filterChoice == "Uitwedstrijden" and match.GetAwayTeam() == team.name:
-                    teammatches.append(match)
+    teammatches:list[Teammatch] = GetTeamMatchesInDateRange(selectedTeams, datepicker[0], datepicker[1], filterChoice)
+
+    ShowMatchesForTeams(teammatches)
+
+if comingWeekendButton:
+    today = datetime.date.today()
+    saturday = today + datetime.timedelta((5 - today.weekday()) % 7)
+    sunday = saturday + datetime.timedelta(1)
+
+    selectedTeams:list[Team] = []
+
+    for team in selectedOptions:
+        selectedTeams.append(club.GetSingleTeam(team.replace("BC Geldrop ", "GELDROP BC ")))
     
-    if teammatches:
-        st.write("Geselecteerde wedstrijden:")
-        sortedMatches = sorted(teammatches, key=lambda m: (m.GetDate(), m.GetTime()))
-        initialDate = None
-        for match in sortedMatches:
-            if initialDate is None or match.GetDate() != initialDate:
-                initialDate = match.GetDate()
-                st.subheader(f"Wedstrijden op {initialDate.strftime('%d-%m-%Y')}")
-            st.write(f"{match.GetDay()} om {match.GetTime()}: {match.GetHomeTeam()} vs {match.GetAwayTeam()} - Score: {match.GetScore()[0]}:{match.GetScore()[1]}")
+    if None in selectedTeams:
+        st.rerun()
+
+    teammatches:list[Teammatch] = GetTeamMatchesInDateRange(selectedTeams, saturday, sunday, filterChoice)
+
+    ShowMatchesForTeams(teammatches)
