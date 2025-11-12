@@ -80,7 +80,8 @@ def ShowMatchesForTeams(teammatches: list[Teammatch]) -> None:
                 initialDate = match.GetDate()
                 st.subheader(f"Wedstrijden op {initialDate.strftime('%d-%m-%Y')}")
             st.write(f"{match.GetDay()} om {match.GetTime()}: {match.GetHomeTeam()} vs {match.GetAwayTeam()} - Score: {match.GetScore()[0]}:{match.GetScore()[1]}")
-
+    else:
+        st.info("Geen wedstrijden gevonden voor de geselecteerde criteria.")
 def GetSelectedTeams(selectedOptions: list[str], club: Club) -> list[Team]:
     selectedTeams: list[Team] = []
     for team in selectedOptions:
