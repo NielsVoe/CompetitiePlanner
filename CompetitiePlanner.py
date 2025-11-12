@@ -31,8 +31,13 @@ def RetrieveData(url):
             matchDate = m["Date"]
             home = m["Home"]
             away = m["Away"]
-            result = m["Result"]
-            match = Teammatch(home, away, result, result, matchDate)
+            try:
+                resultHome = int(m["Result"].split("-")[0].strip())
+                resultAway = int(m["Result"].split("-")[1].strip())
+            except ValueError:
+                resultHome = ""
+                resultAway = ""
+            match = Teammatch(home, away, resultHome, resultAway, matchDate)
             if not team.AddMatch(match):
                 raise ValueError(f"Match {match} already exists in team {team.name}.")
         try:
