@@ -4,6 +4,7 @@ import datetime
 import pages.src.mainPage as MainPage
 from src.Team import Team
 from src.Teammatch import Teammatch
+from src.Club import Club
 
 st.title("Planning")
 club = MainPage.GetClub()
@@ -80,16 +81,18 @@ def ShowMatchesForTeams(teammatches: list[Teammatch]) -> None:
                 st.subheader(f"Wedstrijden op {initialDate.strftime('%d-%m-%Y')}")
             st.write(f"{match.GetDay()} om {match.GetTime()}: {match.GetHomeTeam()} vs {match.GetAwayTeam()} - Score: {match.GetScore()[0]}:{match.GetScore()[1]}")
 
-if planningButton:
+def GetSelectedTeams(selectedOptions: list[str], club: Club) -> list[Team]:
     selectedTeams: list[Team] = []
-
     for team in selectedOptions:
         selectedTeams.append(club.GetSingleTeam(team.replace("BC Geldrop ", "GELDROP BC ")))
-    
     if None in selectedTeams:
         st.rerun()
+    return selectedTeams
 
-    teammatches:list[Teammatch] = GetTeamMatchesInDateRange(selectedTeams, datepicker[0], datepicker[1], filterChoice)
+if planningButton:
+    selectedTeams = GetSelectedTeams(selectedOptions, club)
+    
+    teammatches: list[Teammatch] = GetTeamMatchesInDateRange(selectedTeams, datepicker[0], datepicker[1], filterChoice)
 
     ShowMatchesForTeams(teammatches)
 
@@ -98,13 +101,7 @@ if comingWeekendButton:
     saturday = today + datetime.timedelta((5 - today.weekday()) % 7)
     sunday = saturday + datetime.timedelta(1)
 
-    selectedTeams:list[Team] = []
-
-    for team in selectedOptions:
-        selectedTeams.append(club.GetSingleTeam(team.replace("BC Geldrop ", "GELDROP BC ")))
-    
-    if None in selectedTeams:
-        st.rerun()
+    selectedTeams: list[Team] = GetSelectedTeams(selectedOptions, club)
 
     teammatches:list[Teammatch] = GetTeamMatchesInDateRange(selectedTeams, saturday, sunday, filterChoice)
 
